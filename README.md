@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fluent Website
 
-## Getting Started
+Site officiel de Fluent — application de dictée Windows avec transcription locale Whisper.
 
-First, run the development server:
+**Thought, in Motion.**
+
+## Démarrage
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvrir [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+## Lint & TypeCheck
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run lint
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Le build inclut automatiquement le type-check TypeScript.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Structure
 
-## Deploy on Vercel
+```
+app/                         # Pages Next.js (App Router)
+src/
+├── components/              # Composants React
+│   ├── layout/              # Header, Footer, MobileNav
+│   ├── home/                # Sections de la page d'accueil
+│   ├── download/            # Composants page téléchargement
+│   └── ui/                  # UI primitives (Button, Logo, Icon…)
+├── config/                  # Configuration centralisée
+├── content/                 # Données de contenu (FAQ, features…)
+└── lib/                     # Utilitaires partagés
+public/assets/               # Ressources de marque Fluent
+docs/website/                # Documentation du site
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Configuration de la release
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Toutes les informations de téléchargement sont centralisées dans `src/config/release.ts`.
+
+Pour activer le téléchargement :
+1. Ouvrir `src/config/release.ts`
+2. Passer `isAvailable` à `true`
+3. Renseigner `downloadUrl`, `version`, `fileName`, etc.
+4. Rebuilder le site
+
+Voir [docs/website/download-configuration.md](docs/website/download-configuration.md).
+
+## Police The Seasons
+
+La police éditoriale "The Seasons" n'est pas encore incluse dans le dépôt. Un fallback élégant (Georgia, Times New Roman) est actif.
+
+Pour l'activer :
+1. Placer les fichiers `.woff2` licenciés dans `src/app/fonts/the-seasons/`
+2. Décommenter la configuration `localFont` dans `src/app/fonts.ts`
+3. Remplacer le fallback CSS dans `app/layout.tsx`
+
+## Déploiement
+
+Le projet est prêt pour un déploiement Vercel ou tout hébergeur compatible Next.js.
+
+Configurer la variable publique :
+- `NEXT_PUBLIC_SITE_URL` : URL canonique du site (défaut : `https://fluentapp.cc`)
+
+```bash
+npm run build
+```
+
+## Documentation
+
+- [Architecture](docs/website/architecture.md)
+- [Design System](docs/website/design-system.md)
+- [Asset Inventory](docs/website/asset-inventory.md)
+- [Content Map](docs/website/content-map.md)
+- [Download Configuration](docs/website/download-configuration.md)

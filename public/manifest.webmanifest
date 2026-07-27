@@ -1,0 +1,21 @@
+{
+  "name": "Fluent",
+  "short_name": "Fluent",
+  "description": "Fluent transforme votre voix en texte directement dans vos applications Windows, avec une transcription locale.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#101010",
+  "theme_color": "#101010",
+  "icons": [
+    {
+      "src": "/assets/ico-large/Fluent-white-520x520.png",
+      "sizes": "520x520",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/ico-large/Fluent-white-1024x1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ]
+}

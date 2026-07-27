@@ -1,26 +1,165 @@
 @import "tailwindcss";
 
+/* ================================================================
+   FLUENT DESIGN TOKENS
+   Monochrome editorial palette inspired by the Fluent brand guide.
+   ================================================================ */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* ---- Core palette ---- */
+  --fluent-ink: #101010;
+  --fluent-surface: #1b1b1b;
+  --fluent-surface-elevated: #222222;
+  --fluent-paper: #f4f1ec;
+  --fluent-paper-dim: #e8e5df;
+  --fluent-white: #ffffff;
+
+  /* ---- Muted tones ---- */
+  --fluent-muted-dark: #8a8882;
+  --fluent-muted-light: #6b6862;
+
+  /* ---- Borders ---- */
+  --fluent-border-dark: rgba(255, 255, 255, 0.08);
+  --fluent-border-light: rgba(16, 16, 16, 0.10);
+
+  /* ---- Functional ---- */
+  --fluent-focus: #4a90d9;
+  --fluent-error: #d94a4a;
+  --fluent-success: #4a9d5b;
+  --fluent-disabled: rgba(255, 255, 255, 0.25);
+
+  /* ---- Typography scale ---- */
+  --text-xs: 0.75rem;
+  --text-sm: 0.8125rem;
+  --text-base: 0.9375rem;
+  --text-lg: 1.0625rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.75rem;
+  --text-5xl: 3.75rem;
+  --text-6xl: 5rem;
+
+  /* ---- Spacing ---- */
+  --section-gap: clamp(4rem, 10vw, 8rem);
+  --content-max: 72rem;
+  --content-narrow: 48rem;
+
+  /* ---- Navigation ---- */
+  --nav-height: 3.5rem;
+
+  /* ---- Radii ---- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  /* ---- Transitions ---- */
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 600ms;
+
+  /* ---- Divider ---- */
+  --divider-weight: 1px;
 }
 
+/* ---- Theme extension for Tailwind v4 ---- */
+
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-fluent-ink: var(--fluent-ink);
+  --color-fluent-surface: var(--fluent-surface);
+  --color-fluent-surface-elevated: var(--fluent-surface-elevated);
+  --color-fluent-paper: var(--fluent-paper);
+  --color-fluent-paper-dim: var(--fluent-paper-dim);
+  --color-fluent-white: var(--fluent-white);
+  --color-fluent-muted-dark: var(--fluent-muted-dark);
+  --color-fluent-muted-light: var(--fluent-muted-light);
+  --color-fluent-border-dark: var(--fluent-border-dark);
+  --color-fluent-border-light: var(--fluent-border-light);
+  --color-fluent-focus: var(--fluent-focus);
+  --color-fluent-error: var(--fluent-error);
+  --color-fluent-success: var(--fluent-success);
+  --color-fluent-disabled: var(--fluent-disabled);
+
+  --font-serif: var(--font-the-seasons);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ---- Base styles ---- */
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--fluent-ink);
+  color: var(--fluent-white);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  font-size: var(--text-base);
+  line-height: 1.6;
+}
+
+/* ---- Focus styles ---- */
+
+:focus-visible {
+  outline: 2px solid var(--fluent-focus);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ---- Selection ---- */
+
+::selection {
+  background: rgba(244, 241, 236, 0.2);
+  color: var(--fluent-white);
+}
+
+/* ---- Scrollbar (dark theme) ---- */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 3px;
+}
+
+/* ---- Hero symbol animation ---- */
+
+@keyframes hero-symbol {
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.03) rotate(1deg);
+  }
+  75% {
+    transform: scale(0.97) rotate(-1deg);
+  }
+}
+
+/* ---- Reduced motion ---- */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
