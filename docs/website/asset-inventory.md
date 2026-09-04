@@ -12,7 +12,8 @@ previous Fluent-era document with the new names.
 | ICO files (white) | 6 | ~54.9 KB |
 | Large PNG/ICO | 8 | ~541.3 KB |
 | Brand visuals (`example/`) | 2 | ~102.6 KB |
-| **Total** | **21** | **~724.6 KB** |
+| Favicon set (`favicon/`, added 2026-09-04) | 6 | ~85.4 KB |
+| **Total** | **27** | **~810.0 KB** |
 
 ---
 
@@ -113,4 +114,21 @@ confirmed brand compositions, not screenshots.
 | Real app screenshot | ❌ Not found | No capture of the actual Vozel interface exists in this repo. `product-preview.tsx` uses a brand visual instead and is worded to not claim otherwise. **This is the most visible content gap on the site.** |
 | The Seasons font (.woff2) | ❌ Not found | Fallback serif stack (Georgia/Times) active |
 | OG image (1200×630) | ❌ Not found | Generated via `app/opengraph-image.tsx` (`next/og` `ImageResponse`) from the brand assets — see Priority 5 of the rebranding pass, 2026-09-04 |
-| Favicon.ico (root `app/`) | ⚠️ Exists but default (Next.js placeholder) | Not replaced in this pass — `app/layout.tsx`'s `icons.icon` metadata already points to the real Vozel ICOs and takes precedence in modern browsers; replacing the literal `app/favicon.ico` file is a nice-to-have, not done here |
+| Favicon.ico (root `app/`) | ✅ Resolved 2026-09-04 | Replaced with the real Vozel favicon (see below). |
+
+## Favicon set (`public/assets/favicon/`)
+
+Added 2026-09-04, generated specifically for Vozel (confirms via
+`site.webmanifest`'s `"name": "Vozel"` inside the folder). Black on
+**opaque** white — deliberately not reusing the `ico-*`/`ico-large` files
+above, which are white-on-*transparent* and nearly disappear in a
+browser's usually-light tab bar or an Android launcher.
+
+| File | Usage |
+|------|-------|
+| `favicon.ico` | Copied to `app/favicon.ico` (Next.js's auto-served root favicon) **and** referenced from `metadata.icons.icon` in `app/layout.tsx` |
+| `favicon-16x16.png` / `favicon-32x32.png` | `metadata.icons.icon` |
+| `apple-touch-icon.png` (180×180) | `metadata.icons.apple` |
+| `android-chrome-192x192.png` / `-512x512.png` | `metadata.icons.icon` and `public/manifest.webmanifest`'s `icons` (replacing the oversized 520/1024 brand PNGs previously used there) |
+| `site.webmanifest` | **Not used** — redundant with the existing, richer `public/manifest.webmanifest` (has a real description, dark theme/background color matching `--vozel-ink`, matching the site rather than the generator's default `#f3f2f2`). Left on disk, unreferenced. |
+| `head-snippet.html` | Reference only (generator output); the actual wiring lives in `app/layout.tsx`'s `metadata.icons`, not a literal `<link>` tag. |

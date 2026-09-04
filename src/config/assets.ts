@@ -65,8 +65,24 @@ export const brandVisuals = {
   lockupOnDark: `${EXAMPLE}/2.png`,
 } as const;
 
-/* ---- Favicon (use white ICO) ---- */
-export const favicon = `${ICO_WHITE}/Vozel-white-32x32.ico`;
+/* ---- Favicon set (public/assets/favicon/) ----
+ * Dedicated, purpose-generated favicon files — black on opaque white,
+ * unlike the brand ico-black/ico-white/ico-large files above (white on
+ * transparent, which nearly disappears in a browser's usually-light tab
+ * bar). This is what `app/layout.tsx`'s `metadata.icons` and
+ * `public/manifest.webmanifest` actually reference; `app/favicon.ico`
+ * (Next.js's auto-served root file) is a byte-for-byte copy of
+ * `favicon.ico` below. */
+const FAVICON = `${ASSETS}/favicon`;
+
+export const favicon = {
+  ico: `${FAVICON}/favicon.ico`,
+  png16: `${FAVICON}/favicon-16x16.png`,
+  png32: `${FAVICON}/favicon-32x32.png`,
+  appleTouchIcon: `${FAVICON}/apple-touch-icon.png`,
+  androidChrome192: `${FAVICON}/android-chrome-192x192.png`,
+  androidChrome512: `${FAVICON}/android-chrome-512x512.png`,
+} as const;
 
 /* ---- Context-aware logo helper ---- */
 

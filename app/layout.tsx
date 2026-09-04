@@ -54,20 +54,38 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     // Same note as openGraph.images above — handled by opengraph-image.tsx.
   },
+  // Dedicated favicon set (public/assets/favicon/), not the brand ico-*/
+  // ico-large files above — those are white-on-transparent, which nearly
+  // disappears in a browser's (usually light) tab bar. This set is
+  // black-on-opaque-white at each size a favicon actually needs, generated
+  // for Vozel specifically (see public/assets/favicon/site.webmanifest).
   icons: {
     icon: [
+      { url: "/assets/favicon/favicon.ico", sizes: "any" },
       {
-        url: "/assets/ico-white/Vozel-white-32x32.ico",
-        sizes: "32x32",
+        url: "/assets/favicon/favicon-16x16.png",
+        sizes: "16x16",
+        type: "image/png",
       },
       {
-        url: "/assets/ico-white/Vozel-white-16x16.ico",
-        sizes: "16x16",
+        url: "/assets/favicon/favicon-32x32.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
+      {
+        url: "/assets/favicon/android-chrome-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        url: "/assets/favicon/android-chrome-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
       },
     ],
     apple: [
       {
-        url: "/assets/ico-large/Vozel-white-520x520.png",
+        url: "/assets/favicon/apple-touch-icon.png",
         sizes: "180x180",
         type: "image/png",
       },

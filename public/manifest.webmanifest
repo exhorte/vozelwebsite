@@ -8,13 +8,13 @@
   "theme_color": "#101010",
   "icons": [
     {
-      "src": "/assets/ico-large/Vozel-white-520x520.png",
-      "sizes": "520x520",
+      "src": "/assets/favicon/android-chrome-192x192.png",
+      "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/assets/ico-large/Vozel-white-1024x1024.png",
-      "sizes": "1024x1024",
+      "src": "/assets/favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ]
