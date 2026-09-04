@@ -1,6 +1,6 @@
-# Fluent Website
+# Vozel Website
 
-Site officiel de Fluent — application de dictée Windows avec transcription locale Whisper.
+Site officiel de Vozel — application de dictée Windows avec transcription locale (Parakeet-TDT).
 
 **Thought, in Motion.**
 
@@ -40,7 +40,7 @@ src/
 ├── config/                  # Configuration centralisée
 ├── content/                 # Données de contenu (FAQ, features…)
 └── lib/                     # Utilitaires partagés
-public/assets/               # Ressources de marque Fluent
+public/assets/               # Ressources de marque Vozel
 docs/website/                # Documentation du site
 ```
 
@@ -70,7 +70,7 @@ Pour l'activer :
 Le projet est prêt pour un déploiement Vercel ou tout hébergeur compatible Next.js.
 
 Configurer la variable publique :
-- `NEXT_PUBLIC_SITE_URL` : URL canonique du site (défaut : `https://fluentapp.cc`)
+- `NEXT_PUBLIC_SITE_URL` : URL canonique du site (défaut : `https://vozelapp.cc`)
 
 ```bash
 npm run build

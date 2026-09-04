@@ -9,13 +9,13 @@ import { Reveal } from "@/src/components/ui/reveal";
  */
 export function CompatibilitySection() {
   return (
-    <section className="bg-fluent-ink">
+    <section className="bg-vozel-ink">
       <div className="mx-auto max-w-[var(--content-max)] px-6 py-[var(--section-gap)]">
         <Reveal>
           <SectionHeading
             label="Compatibilité"
             title="Conçu pour Windows."
-            subtitle="Fluent s'intègre nativement dans l'environnement Windows pour une expérience fluide et sans friction."
+            subtitle="Vozel s'intègre nativement dans l'environnement Windows pour une expérience fluide et sans friction."
             scheme="dark"
             className="mb-12 sm:mb-16"
           />
@@ -24,15 +24,15 @@ export function CompatibilitySection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
           {specs.map((spec, i) => (
             <Reveal key={i} delay={i * 60}>
-              <div className="flex flex-col gap-2 p-6 rounded-lg border border-fluent-border-dark bg-fluent-surface/50">
-                <h3 className="text-xs tracking-[0.15em] uppercase text-fluent-muted-dark font-medium">
+              <div className="flex flex-col gap-2 p-6 rounded-lg border border-vozel-border-dark bg-vozel-surface/50">
+                <h3 className="text-xs tracking-[0.15em] uppercase text-vozel-muted-dark font-medium">
                   {spec.label}
                 </h3>
-                <p className="text-sm text-fluent-white leading-relaxed">
+                <p className="text-sm text-vozel-white leading-relaxed">
                   {spec.value}
                 </p>
                 {spec.note && (
-                  <p className="text-xs text-fluent-muted-dark mt-1">
+                  <p className="text-xs text-vozel-muted-dark mt-1">
                     {spec.note}
                   </p>
                 )}
@@ -59,12 +59,12 @@ const specs = [
   {
     label: "Espace disque",
     value: "~2 Go",
-    note: "Inclut le modèle Whisper",
+    note: "Modèles de transcription et de nettoyage locaux — estimation",
   },
   {
     label: "Mémoire vive",
     value: "8 Go recommandés",
-    note: "4 Go minimum",
+    note: "4 Go minimum — estimation",
   },
   {
     label: "Connexion Internet",

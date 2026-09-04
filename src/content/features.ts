@@ -1,5 +1,5 @@
 /**
- * Fluent features content.
+ * Vozel features content.
  *
  * Each feature must be verified against the actual product.
  * Features marked with needsVerification: true should be
@@ -17,64 +17,57 @@ export const features: Feature[] = [
   {
     title: "Transcription locale",
     description:
-      "Fluent utilise Whisper pour transcrire votre voix directement sur votre machine. Aucune connexion Internet n'est requise pour la transcription.",
+      "Vozel transcrit votre voix directement sur votre machine grâce à Parakeet-TDT, son moteur de reconnaissance vocale local. Aucune connexion Internet n'est requise pour la dictée.",
     icon: "shield",
-    needsVerification: true,
+    needsVerification: false,
   },
   {
     title: "Français et anglais",
     description:
-      "Changez de langue de transcription selon vos besoins. Fluent prend en charge le français et l'anglais.",
+      "Changez de langue de transcription selon vos besoins. Vozel prend en charge le français et l'anglais.",
     icon: "globe",
     needsVerification: true,
   },
   {
-    title: "Profils de réécriture",
+    title: "Nettoyage IA local",
     description:
-      "Définissez des profils personnalisés pour adapter le style et le format du texte transcrit à vos usages.",
+      "Activez le nettoyage optionnel par modèle de langue local pour corriger ponctuation et grammaire — désactivable à tout moment, 100 % hors ligne.",
     icon: "edit",
-    needsVerification: true,
+    needsVerification: false,
   },
   {
     title: "Dictionnaire personnalisé",
     description:
-      "Ajoutez vos termes techniques, noms propres et abréviations pour améliorer la précision de la transcription.",
+      "Ajoutez vos propres corrections (noms propres, jargon) : le texte reconnu est remplacé par la forme voulue après la transcription, avant l'insertion.",
     icon: "book",
-    needsVerification: true,
+    needsVerification: false,
   },
   {
     title: "Insertion dans la zone active",
     description:
       "Le texte transcrit s'insère directement dans le champ de saisie où se trouve votre curseur, sans changer d'application.",
     icon: "cursor",
-    needsVerification: true,
-  },
-  {
-    title: "Protection des champs sensibles",
-    description:
-      "Fluent détecte automatiquement les champs de mot de passe et les zones protégées pour éviter toute transcription accidentelle.",
-    icon: "lock",
-    needsVerification: true,
+    needsVerification: false,
   },
   {
     title: "Fonctionnement hors ligne",
     description:
-      "Le moteur de transcription fonctionne entièrement hors ligne. Vos données vocales ne quittent jamais votre appareil.",
+      "Le moteur de transcription fonctionne entièrement hors ligne. Vos données vocales ne quittent jamais votre appareil, sauf activation manuelle d'une option Cloud.",
     icon: "wifi-off",
-    needsVerification: true,
+    needsVerification: false,
   },
   {
     title: "Historique local",
     description:
       "Consultez l'historique de vos sessions de dictée, stocké localement et sous votre contrôle.",
     icon: "clock",
-    needsVerification: true,
+    needsVerification: false,
   },
   {
-    title: "Raccourci global",
+    title: "Déclenchement instantané",
     description:
-      "Lancez la dictée depuis n'importe quelle application avec un raccourci clavier configurable.",
+      "Maintenez Ctrl+Win, où que vous soyez, pour dicter — relâchez pour insérer. Un geste unique et fixe, ou le bouton du widget flottant : pas de raccourci à configurer.",
     icon: "keyboard",
-    needsVerification: true,
+    needsVerification: false,
   },
 ];

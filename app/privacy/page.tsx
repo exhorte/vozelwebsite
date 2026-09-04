@@ -8,7 +8,7 @@ import { siteConfig } from "@/src/config/site";
 export const metadata: Metadata = {
   title: "Politique de confidentialité",
   description:
-    "Politique de confidentialité du site Fluent et de l'application de dictée.",
+    "Politique de confidentialité du site Vozel et de l'application de dictée.",
 };
 
 /**
@@ -25,22 +25,22 @@ export default function PrivacyPage() {
 
       <main className="flex-1">
         {/* Hero */}
-        <section className="bg-fluent-ink pt-[var(--nav-height)]">
+        <section className="bg-vozel-ink pt-[var(--nav-height)]">
           <div className="mx-auto max-w-[var(--content-narrow)] px-6 pt-20 pb-12 sm:pt-28 sm:pb-16">
             <Reveal>
-              <h1 className="font-[family-name:var(--font-the-seasons)] text-4xl sm:text-5xl tracking-tight text-fluent-white text-center leading-[1.08]">
+              <h1 className="font-[family-name:var(--font-the-seasons)] text-4xl sm:text-5xl tracking-tight text-vozel-white text-center leading-[1.08]">
                 Politique de confidentialité
               </h1>
-              <p className="mt-4 text-sm text-fluent-muted-dark text-center">
+              <p className="mt-4 text-sm text-vozel-muted-dark text-center">
                 Dernière mise à jour :{" "}
-                <time dateTime="2026-07-27">27 juillet 2026</time>
+                <time dateTime="2026-09-04">4 septembre 2026</time>
               </p>
             </Reveal>
           </div>
         </section>
 
         {/* Content */}
-        <section className="bg-fluent-ink pb-[var(--section-gap)]">
+        <section className="bg-vozel-ink pb-[var(--section-gap)]">
           <div className="mx-auto max-w-[var(--content-narrow)] px-6">
             <div className="prose-custom flex flex-col gap-10">
               <PrivacySection title="Introduction">
@@ -53,7 +53,7 @@ export default function PrivacyPage() {
                 <p>
                   Cette politique concerne deux contextes distincts : le site web
                   que vous consultez actuellement, et l&apos;application de bureau
-                  Fluent pour Windows.
+                  Vozel pour Windows.
                 </p>
               </PrivacySection>
 
@@ -82,16 +82,16 @@ export default function PrivacyPage() {
 
               <Divider scheme="dark" />
 
-              <PrivacySection title="Données traitées par l'application Fluent">
+              <PrivacySection title="Données traitées par l'application Vozel">
                 <p>
-                  L&apos;application Fluent traite votre voix localement sur
+                  L&apos;application Vozel traite votre voix localement sur
                   votre machine Windows. Par défaut, aucune donnée vocale ou
                   texte transcrit ne quitte votre appareil.
                 </p>
                 <ul>
                   <li>
-                    La transcription est effectuée localement via le modèle
-                    Whisper.
+                    La transcription est effectuée localement via le moteur
+                    Parakeet-TDT.
                   </li>
                   <li>
                     L&apos;historique de dictée est stocké localement sur votre
@@ -112,7 +112,7 @@ export default function PrivacyPage() {
 
               <PrivacySection title="Données non collectées">
                 <p>
-                  Ni le site web ni l&apos;application Fluent ne collectent :
+                  Ni le site web ni l&apos;application Vozel ne collectent :
                 </p>
                 <ul>
                   <li>Vos données vocales ou enregistrements.</li>
@@ -176,10 +176,10 @@ function PrivacySection({
   return (
     <Reveal>
       <section className="space-y-3">
-        <h2 className="font-[family-name:var(--font-the-seasons)] text-xl text-fluent-white leading-snug">
+        <h2 className="font-[family-name:var(--font-the-seasons)] text-xl text-vozel-white leading-snug">
           {title}
         </h2>
-        <div className="text-sm text-fluent-muted-dark leading-relaxed space-y-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-1 [&_li]:text-fluent-muted-dark">
+        <div className="text-sm text-vozel-muted-dark leading-relaxed space-y-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-1 [&_li]:text-vozel-muted-dark">
           {children}
         </div>
       </section>

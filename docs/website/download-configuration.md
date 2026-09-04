@@ -1,4 +1,4 @@
-# Fluent Website — Download Configuration
+# Vozel Website — Download Configuration
 
 ## Centralized release config
 
@@ -41,7 +41,12 @@ The site automatically updates everywhere:
 - Hero CTA button
 - Download CTA section on homepage
 - `/download` page (card, metadata, checksum)
-- Structured data (Schema.org `SoftwareApplication`)
+
+Note (corrected 2026-09-04): no Schema.org / JSON-LD structured data is
+implemented anywhere in the codebase today. An earlier version of this doc
+claimed release info also propagated to structured data — that was
+aspirational, not real. Add it as a genuine feature (and re-document it
+here) if it gets built.
 
 ## Where the download URL is consumed
 

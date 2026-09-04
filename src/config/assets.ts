@@ -1,5 +1,5 @@
 /**
- * Centralized asset mapping for Fluent brand resources.
+ * Centralized asset mapping for Vozel brand resources.
  *
  * Every image reference in the application should go through
  * this file. Never hardcode image paths in components.
@@ -11,19 +11,19 @@ const ASSETS = "/assets";
 const ICO_LARGE = `${ASSETS}/ico-large`;
 
 export const logos = {
-  /** White Fluent symbol on dark backgrounds */
+  /** White Vozel symbol on dark backgrounds */
   white: {
     /** 1024×1024 PNG — primary web logo */
-    large: `${ICO_LARGE}/Fluent-white-1024x1024.png`,
+    large: `${ICO_LARGE}/Vozel-white-1024x1024.png`,
     /** 520×520 PNG — reduced size */
-    medium: `${ICO_LARGE}/Fluent-white-520x520.png`,
+    medium: `${ICO_LARGE}/Vozel-white-520x520.png`,
   },
-  /** Black Fluent symbol on light backgrounds */
+  /** Black Vozel symbol on light backgrounds */
   black: {
     /** 1024×1024 PNG — primary web logo */
-    large: `${ICO_LARGE}/Fluent-black-1024x1024.png`,
+    large: `${ICO_LARGE}/Vozel-black-1024x1024.png`,
     /** 520×520 PNG — reduced size */
-    medium: `${ICO_LARGE}/Fluent-black-520x520.png`,
+    medium: `${ICO_LARGE}/Vozel-black-520x520.png`,
   },
 } as const;
 
@@ -33,34 +33,40 @@ const ICO_WHITE = `${ASSETS}/ico-white`;
 
 export const icoFiles = {
   black: {
-    "16": `${ICO_BLACK}/Fluent-16x16.ico`,
-    "32": `${ICO_BLACK}/Fluent-32x32.ico`,
-    "64": `${ICO_BLACK}/Fluent-64x64.ico`,
-    "128": `${ICO_BLACK}/Fluent-128x128.ico`,
-    "256": `${ICO_BLACK}/Fluent-256x256.ico`,
+    "16": `${ICO_BLACK}/Vozel-16x16.ico`,
+    "32": `${ICO_BLACK}/Vozel-32x32.ico`,
+    "64": `${ICO_BLACK}/Vozel-64x64.ico`,
+    "128": `${ICO_BLACK}/Vozel-128x128.ico`,
+    "256": `${ICO_BLACK}/Vozel-256x256.ico`,
   },
   white: {
-    "16": `${ICO_WHITE}/Fluent-white-16x16.ico`,
-    "32": `${ICO_WHITE}/Fluent-white-32x32.ico`,
-    "64": `${ICO_WHITE}/Fluent-white-64x64.ico`,
-    "128": `${ICO_WHITE}/Fluent-white-128x128.ico`,
-    "256": `${ICO_WHITE}/Fluent-white-256x256.ico`,
-    bundled: `${ICO_WHITE}/Fluent-white.ico`,
+    "16": `${ICO_WHITE}/Vozel-white-16x16.ico`,
+    "32": `${ICO_WHITE}/Vozel-white-32x32.ico`,
+    "64": `${ICO_WHITE}/Vozel-white-64x64.ico`,
+    "128": `${ICO_WHITE}/Vozel-white-128x128.ico`,
+    "256": `${ICO_WHITE}/Vozel-white-256x256.ico`,
+    bundled: `${ICO_WHITE}/Vozel-white.ico`,
   },
 } as const;
 
-/* ---- Application screenshots ---- */
+/* ---- Brand visuals (NOT application screenshots) ----
+ * `public/assets/example/1.png` and `2.png` are 2000×2000 brand lockup
+ * compositions — the icon + the "Vozel." wordmark, on white and on black
+ * respectively. They are not captures of the app interface; no real
+ * screenshot of the app exists in this repository yet. See
+ * `product-preview.tsx`, which uses these only as an editorial brand
+ * visual, never captioned as "the interface". */
 const EXAMPLE = `${ASSETS}/example`;
 
-export const screenshots = {
-  /** Screenshot 1 — likely main dictation interface, 1726×1080 */
-  main1: `${EXAMPLE}/Screenshot 2026-07-27 174908.png`,
-  /** Screenshot 2 — likely settings or alternate view, 1726×1080 */
-  main2: `${EXAMPLE}/Screenshot 2026-07-27 174921.png`,
+export const brandVisuals = {
+  /** Icon + "Vozel." wordmark, black on white, 2000×2000 */
+  lockupOnLight: `${EXAMPLE}/1.png`,
+  /** Icon + "Vozel." wordmark, white on black, 2000×2000 */
+  lockupOnDark: `${EXAMPLE}/2.png`,
 } as const;
 
 /* ---- Favicon (use white ICO) ---- */
-export const favicon = `${ICO_WHITE}/Fluent-white-32x32.ico`;
+export const favicon = `${ICO_WHITE}/Vozel-white-32x32.ico`;
 
 /* ---- Context-aware logo helper ---- */
 

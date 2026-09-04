@@ -1,13 +1,13 @@
-# Fluent Website — Content Map
+# Vozel Website — Content Map
 
 ## Homepage (`/`)
 
 | Section | Surface | Key Message |
 |---------|---------|------------|
 | Hero | Dark | "Thought, in Motion." — Transformez votre voix en texte |
-| Product Preview | Dark (elevated) | Screenshot de l'interface Fluent |
-| Value Proposition | Paper (light) | 3 étapes : Parlez → Fluent transcrit → Résultat |
-| Features | Dark | 9 fonctionnalités en grille éditoriale |
+| Product Preview | Dark (elevated) | Identité de marque (logo + wordmark) — **pas** un screenshot, aucune capture réelle de l'app n'existe encore (voir statut ci-dessous) |
+| Value Proposition | Paper (light) | 3 étapes : Parlez → Vozel transcrit → Résultat |
+| Features | Dark | 8 fonctionnalités en grille éditoriale |
 | Workflow | Dark (elevated) | 4 étapes numérotées avec descriptions |
 | Privacy & Trust | Paper (light) | 4 affirmations vérifiées sur la confidentialité |
 | Compatibility | Dark | 6 specs système en cartes |
@@ -43,7 +43,7 @@
 7 sections:
 - Introduction (site vs application)
 - Données traitées par le site web
-- Données traitées par l'application Fluent
+- Données traitées par l'application Vozel
 - Données non collectées
 - Liens externes
 - Contact
@@ -74,12 +74,17 @@ Message : "Les notes de version apparaîtront ici dès la première publication.
 
 ## Content Verification Status
 
+Corrected 2026-09-04 against product facts supplied for that pass (see
+git history / session notes for the source). This is not a line-by-line
+product audit — it reflects the specific corrections made in that pass.
+
 | Content | Status |
 |---------|--------|
-| Features list | ⚠️ Needs product verification |
-| FAQ answers | ⚠️ Needs product verification |
-| Privacy claims | ⚠️ Needs product verification |
-| Compatibility specs | ⚠️ Needs product verification |
-| Release info | ❌ Not yet available |
-| Legal info | ❌ Not yet available |
-| Screenshots | ⚠️ Verify they show actual product |
+| Features list | ✅ Whisper mention removed (named Parakeet-TDT), "Profils de réécriture" replaced with the real optional local LLM cleanup, "Protection des champs sensibles" removed (unconfirmed claim). "Français et anglais" still ⚠️ unverified. |
+| FAQ answers | ✅ Whisper mention corrected (Q1). Rest unchanged from prior pass — not re-audited line by line. |
+| Privacy claims | ✅ Whisper mention corrected; removed an unconfirmed "exporter l'historique" claim (only view/delete are confirmed). |
+| Compatibility specs | ✅ False "Inclut le modèle Whisper" note removed; RAM/disk values explicitly marked as estimates, not asserted as fact. |
+| Workflow / value-prop steps | ✅ Corrected: dictation trigger is holding Ctrl+Win (fixed, not a configurable shortcut) or the floating-widget button — not a generic "raccourci clavier global". Removed an unconfirmed "temps réel" transcription claim. |
+| Release info | ❌ Not yet available (`isAvailable: false`, correct as-is) |
+| Legal info | ❌ Not yet available (all fields intentionally empty) |
+| Brand visual (was "Screenshots") | ✅ Fixed: `example/1.png`/`2.png` are brand lockup compositions (icon + "Vozel." wordmark), confirmed by opening the files — not app screenshots. `product-preview.tsx` now frames them honestly and no longer claims to show "the interface". **A real screenshot of the app is still missing** — this is the most visible content gap on the site. |

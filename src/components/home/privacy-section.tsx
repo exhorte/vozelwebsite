@@ -12,13 +12,13 @@ import { Icon } from "@/src/components/ui/icon";
  */
 export function PrivacySection() {
   return (
-    <section id="privacy" className="bg-fluent-paper">
+    <section id="privacy" className="bg-vozel-paper">
       <div className="mx-auto max-w-[var(--content-narrow)] px-6 py-[var(--section-gap)]">
         <Reveal>
           <SectionHeading
             label="Confidentialité"
             title="Vos mots restent sous votre contrôle."
-            subtitle="Fluent est conçu pour que vos données vocales ne quittent jamais votre machine, sauf si vous en décidez autrement."
+            subtitle="Vozel est conçu pour que vos données vocales ne quittent jamais votre machine, sauf si vous en décidez autrement."
             scheme="light"
             className="mb-16"
           />
@@ -31,14 +31,14 @@ export function PrivacySection() {
                 <Icon
                   name="check"
                   size={20}
-                  className="text-fluent-success mt-0.5 shrink-0"
+                  className="text-vozel-success mt-0.5 shrink-0"
                   strokeWidth={2.5}
                 />
                 <div className="flex flex-col gap-1">
-                  <h3 className="font-[family-name:var(--font-the-seasons)] text-lg text-fluent-ink leading-snug">
+                  <h3 className="font-[family-name:var(--font-the-seasons)] text-lg text-vozel-ink leading-snug">
                     {claim.title}
                   </h3>
-                  <p className="text-sm text-fluent-muted-light leading-relaxed max-w-md">
+                  <p className="text-sm text-vozel-muted-light leading-relaxed max-w-md">
                     {claim.description}
                   </p>
                 </div>
@@ -51,10 +51,10 @@ export function PrivacySection() {
         </div>
 
         <Reveal delay={300}>
-          <p className="mt-12 text-sm text-fluent-muted-light text-center">
+          <p className="mt-12 text-sm text-vozel-muted-light text-center">
             <Link
               href="/privacy"
-              className="underline underline-offset-4 hover:text-fluent-ink transition-colors focus-visible:outline-2 focus-visible:outline-fluent-focus rounded-sm"
+              className="underline underline-offset-4 hover:text-vozel-ink transition-colors focus-visible:outline-2 focus-visible:outline-vozel-focus rounded-sm"
             >
               Consultez notre politique de confidentialité
             </Link>{" "}
@@ -70,12 +70,12 @@ const claims = [
   {
     title: "La transcription fonctionne localement par défaut.",
     description:
-      "Le moteur Whisper s'exécute directement sur votre machine. Votre voix est traitée sans jamais transiter par un serveur externe.",
+      "Le moteur de transcription local (Parakeet-TDT) s'exécute directement sur votre machine. Votre voix est traitée sans jamais transiter par un serveur externe.",
   },
   {
     title: "Votre historique reste sur votre appareil.",
     description:
-      "Les sessions de dictée et l'historique sont stockés localement. Vous pouvez les consulter, les exporter ou les supprimer à tout moment.",
+      "Les sessions de dictée et l'historique sont stockés localement. Vous pouvez les consulter ou les supprimer à tout moment.",
   },
   {
     title: "Les fonctions Cloud sont optionnelles.",
@@ -85,6 +85,6 @@ const claims = [
   {
     title: "Aucune collecte de données vocales.",
     description:
-      "Fluent ne collecte, n'enregistre et ne transmet aucune donnée vocale à des tiers. Votre voix est votre voix.",
+      "Vozel ne collecte, n'enregistre et ne transmet aucune donnée vocale à des tiers. Votre voix est votre voix.",
   },
 ];

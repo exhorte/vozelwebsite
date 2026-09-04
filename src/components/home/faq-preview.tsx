@@ -15,7 +15,7 @@ export function FaqPreview() {
   const previewItems = faqItems.slice(0, 4);
 
   return (
-    <section className="bg-fluent-paper">
+    <section className="bg-vozel-paper">
       <div className="mx-auto max-w-[var(--content-narrow)] px-6 py-[var(--section-gap)]">
         <Reveal>
           <SectionHeading
@@ -31,17 +31,17 @@ export function FaqPreview() {
             <Reveal key={i} delay={i * 80}>
               <details className="group py-5">
                 <summary className="flex items-start justify-between gap-4 cursor-pointer list-none">
-                  <h3 className="font-[family-name:var(--font-the-seasons)] text-lg text-fluent-ink leading-snug pr-6">
+                  <h3 className="font-[family-name:var(--font-the-seasons)] text-lg text-vozel-ink leading-snug pr-6">
                     {item.question}
                   </h3>
                   <Icon
                     name="chevron-down"
                     size={18}
-                    className="text-fluent-muted-light mt-1.5 shrink-0 transition-transform duration-[var(--duration-fast)] group-open:rotate-180"
+                    className="text-vozel-muted-light mt-1.5 shrink-0 transition-transform duration-[var(--duration-fast)] group-open:rotate-180"
                     strokeWidth={1.5}
                   />
                 </summary>
-                <p className="mt-3 text-sm text-fluent-muted-light leading-relaxed max-w-prose">
+                <p className="mt-3 text-sm text-vozel-muted-light leading-relaxed max-w-prose">
                   {item.answer}
                 </p>
               </details>
@@ -54,7 +54,7 @@ export function FaqPreview() {
           <p className="mt-10 text-center">
             <Link
               href="/faq"
-              className="inline-flex items-center gap-2 text-sm text-fluent-muted-light hover:text-fluent-ink transition-colors underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-fluent-focus rounded-sm"
+              className="inline-flex items-center gap-2 text-sm text-vozel-muted-light hover:text-vozel-ink transition-colors underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-vozel-focus rounded-sm"
             >
               Voir toutes les questions
               <Icon name="arrow-right" size={14} strokeWidth={1.5} />

@@ -6,7 +6,7 @@ interface DividerProps {
 }
 
 /**
- * Thin, elegant divider following the Fluent brand guide.
+ * Thin, elegant divider following the Vozel brand guide.
  */
 export function Divider({ scheme = "dark", className }: DividerProps) {
   return (
@@ -14,8 +14,8 @@ export function Divider({ scheme = "dark", className }: DividerProps) {
       className={cx(
         "border-0 h-px w-full",
         scheme === "dark"
-          ? "bg-fluent-border-dark"
-          : "bg-fluent-border-light",
+          ? "bg-vozel-border-dark"
+          : "bg-vozel-border-light",
         className
       )}
     />

@@ -1,32 +1,32 @@
 @import "tailwindcss";
 
 /* ================================================================
-   FLUENT DESIGN TOKENS
-   Monochrome editorial palette inspired by the Fluent brand guide.
+   VOZEL DESIGN TOKENS
+   Monochrome editorial palette inspired by the Vozel brand guide.
    ================================================================ */
 
 :root {
   /* ---- Core palette ---- */
-  --fluent-ink: #101010;
-  --fluent-surface: #1b1b1b;
-  --fluent-surface-elevated: #222222;
-  --fluent-paper: #f4f1ec;
-  --fluent-paper-dim: #e8e5df;
-  --fluent-white: #ffffff;
+  --vozel-ink: #101010;
+  --vozel-surface: #1b1b1b;
+  --vozel-surface-elevated: #222222;
+  --vozel-paper: #f4f1ec;
+  --vozel-paper-dim: #e8e5df;
+  --vozel-white: #ffffff;
 
   /* ---- Muted tones ---- */
-  --fluent-muted-dark: #8a8882;
-  --fluent-muted-light: #6b6862;
+  --vozel-muted-dark: #8a8882;
+  --vozel-muted-light: #6b6862;
 
   /* ---- Borders ---- */
-  --fluent-border-dark: rgba(255, 255, 255, 0.08);
-  --fluent-border-light: rgba(16, 16, 16, 0.10);
+  --vozel-border-dark: rgba(255, 255, 255, 0.08);
+  --vozel-border-light: rgba(16, 16, 16, 0.10);
 
   /* ---- Functional ---- */
-  --fluent-focus: #4a90d9;
-  --fluent-error: #d94a4a;
-  --fluent-success: #4a9d5b;
-  --fluent-disabled: rgba(255, 255, 255, 0.25);
+  --vozel-focus: #4a90d9;
+  --vozel-error: #d94a4a;
+  --vozel-success: #4a9d5b;
+  --vozel-disabled: rgba(255, 255, 255, 0.25);
 
   /* ---- Typography scale ---- */
   --text-xs: 0.75rem;
@@ -67,20 +67,20 @@
 /* ---- Theme extension for Tailwind v4 ---- */
 
 @theme inline {
-  --color-fluent-ink: var(--fluent-ink);
-  --color-fluent-surface: var(--fluent-surface);
-  --color-fluent-surface-elevated: var(--fluent-surface-elevated);
-  --color-fluent-paper: var(--fluent-paper);
-  --color-fluent-paper-dim: var(--fluent-paper-dim);
-  --color-fluent-white: var(--fluent-white);
-  --color-fluent-muted-dark: var(--fluent-muted-dark);
-  --color-fluent-muted-light: var(--fluent-muted-light);
-  --color-fluent-border-dark: var(--fluent-border-dark);
-  --color-fluent-border-light: var(--fluent-border-light);
-  --color-fluent-focus: var(--fluent-focus);
-  --color-fluent-error: var(--fluent-error);
-  --color-fluent-success: var(--fluent-success);
-  --color-fluent-disabled: var(--fluent-disabled);
+  --color-vozel-ink: var(--vozel-ink);
+  --color-vozel-surface: var(--vozel-surface);
+  --color-vozel-surface-elevated: var(--vozel-surface-elevated);
+  --color-vozel-paper: var(--vozel-paper);
+  --color-vozel-paper-dim: var(--vozel-paper-dim);
+  --color-vozel-white: var(--vozel-white);
+  --color-vozel-muted-dark: var(--vozel-muted-dark);
+  --color-vozel-muted-light: var(--vozel-muted-light);
+  --color-vozel-border-dark: var(--vozel-border-dark);
+  --color-vozel-border-light: var(--vozel-border-light);
+  --color-vozel-focus: var(--vozel-focus);
+  --color-vozel-error: var(--vozel-error);
+  --color-vozel-success: var(--vozel-success);
+  --color-vozel-disabled: var(--vozel-disabled);
 
   --font-serif: var(--font-the-seasons);
   --font-sans: var(--font-geist-sans);
@@ -96,8 +96,8 @@ html {
 }
 
 body {
-  background: var(--fluent-ink);
-  color: var(--fluent-white);
+  background: var(--vozel-ink);
+  color: var(--vozel-white);
   font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   font-size: var(--text-base);
   line-height: 1.6;
@@ -106,7 +106,7 @@ body {
 /* ---- Focus styles ---- */
 
 :focus-visible {
-  outline: 2px solid var(--fluent-focus);
+  outline: 2px solid var(--vozel-focus);
   outline-offset: 2px;
   border-radius: 2px;
 }
@@ -115,7 +115,7 @@ body {
 
 ::selection {
   background: rgba(244, 241, 236, 0.2);
-  color: var(--fluent-white);
+  color: var(--vozel-white);
 }
 
 /* ---- Scrollbar (dark theme) ---- */

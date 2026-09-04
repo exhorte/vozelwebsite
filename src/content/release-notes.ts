@@ -19,7 +19,7 @@ export interface ReleaseNote {
 
 /**
  * Release notes are currently empty — awaiting the first
- * public release of Fluent.
+ * public release of Vozel.
  *
  * Add entries chronologically (most recent first).
  */

@@ -1,4 +1,4 @@
-# Fluent Website — Architecture
+# Vozel Website — Architecture
 
 ## Stack
 
@@ -18,7 +18,7 @@
 /
   ├── Page d'accueil
   │   ├── Hero
-  │   ├── Product Preview
+  │   ├── Product Preview (identité de marque — pas de vraie capture d'écran)
   │   ├── Value Proposition (light surface)
   │   ├── Features
   │   ├── Workflow
@@ -42,6 +42,7 @@ app/                         # Next.js App Router (pages + layouts)
 ├── layout.tsx               # Root layout (metadata, fonts, HTML shell)
 ├── page.tsx                 # Homepage (assembles all home sections)
 ├── not-found.tsx            # Custom 404 page
+├── opengraph-image.tsx      # Generates /og-image (next/og ImageResponse) from brand assets
 ├── globals.css              # Design tokens + Tailwind v4 theme + base styles
 ├── download/page.tsx        # Download page
 ├── faq/page.tsx             # FAQ page
@@ -59,7 +60,7 @@ src/
 │   │   └── site-footer.tsx      # Minimal dark footer
 │   ├── home/
 │   │   ├── hero-section.tsx         # Hero (logo, tagline, CTAs)
-│   │   ├── product-preview.tsx      # Screenshot showcase
+│   │   ├── product-preview.tsx      # Brand identity visual (no real screenshot yet)
 │   │   ├── value-section.tsx        # 3-step value prop (light)
 │   │   ├── features-section.tsx     # Feature grid
 │   │   ├── workflow-section.tsx      # 4-step how-it-works
@@ -74,7 +75,7 @@ src/
 │   │   └── checksum-copy.tsx        # SHA-256 with copy button
 │   └── ui/
 │       ├── button.tsx           # Link/button with variants
-│       ├── logo.tsx             # Context-aware Fluent logo
+│       ├── logo.tsx             # Context-aware Vozel logo
 │       ├── icon.tsx             # Inline SVG icon library
 │       ├── section-heading.tsx  # Editorial heading (label/title/subtitle)
 │       ├── divider.tsx          # Thin section divider
@@ -93,11 +94,11 @@ src/
     └── utils.ts             # cx(), canonicalUrl(), formatDate(), currentYear()
 
 public/
-├── assets/                  # Fluent brand assets
+├── assets/                  # Vozel brand assets
 │   ├── ico-black/           # Black ICO variants (16–256px)
 │   ├── ico-white/           # White ICO variants (16–256px)
-│   ├── ico-large/           # High-res PNG + ICO (520, 1024px)
-│   └── example/             # App screenshots
+│   ├── ico-large/           # High-res PNG + ICO (520, 1024px), icon only
+│   └── example/             # Brand lockup compositions (icon + "Vozel." wordmark), NOT app screenshots
 └── manifest.webmanifest     # PWA manifest
 ```
 

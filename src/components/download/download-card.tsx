@@ -11,30 +11,30 @@ import { currentRelease, channelLabels } from "@/src/config/release";
  */
 export function DownloadCard() {
   return (
-    <div className="bg-fluent-surface-elevated border border-fluent-border-dark rounded-lg p-8 sm:p-10">
+    <div className="bg-vozel-surface-elevated border border-vozel-border-dark rounded-lg p-8 sm:p-10">
       <div className="flex flex-col items-center text-center gap-6">
         {/* Channel badge */}
         {currentRelease.isAvailable ? (
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-fluent-border-dark text-xs text-fluent-muted-dark">
-            <span className="w-1.5 h-1.5 rounded-full bg-fluent-success" />
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-vozel-border-dark text-xs text-vozel-muted-dark">
+            <span className="w-1.5 h-1.5 rounded-full bg-vozel-success" />
             {channelLabels[currentRelease.channel]}
           </span>
         ) : (
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-fluent-border-dark text-xs text-fluent-muted-dark">
-            <span className="w-1.5 h-1.5 rounded-full bg-fluent-muted-dark" />
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-vozel-border-dark text-xs text-vozel-muted-dark">
+            <span className="w-1.5 h-1.5 rounded-full bg-vozel-muted-dark" />
             À venir
           </span>
         )}
 
         {/* Version */}
         <div className="flex flex-col gap-1">
-          <h2 className="font-[family-name:var(--font-the-seasons)] text-2xl sm:text-3xl text-fluent-white">
+          <h2 className="font-[family-name:var(--font-the-seasons)] text-2xl sm:text-3xl text-vozel-white">
             {currentRelease.isAvailable
-              ? `Fluent ${currentRelease.version}`
-              : "Fluent"}
+              ? `Vozel ${currentRelease.version}`
+              : "Vozel"}
           </h2>
           {!currentRelease.isAvailable && (
-            <p className="text-sm text-fluent-muted-dark">
+            <p className="text-sm text-vozel-muted-dark">
               Première version en préparation
             </p>
           )}
@@ -62,7 +62,7 @@ export function DownloadCard() {
               <Icon name="download" size={18} strokeWidth={2} />
               Bientôt disponible
             </Button>
-            <p className="text-sm text-fluent-muted-dark">
+            <p className="text-sm text-vozel-muted-dark">
               L&apos;application n&apos;est pas encore disponible au téléchargement.
               Revenez prochainement.
             </p>

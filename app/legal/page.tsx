@@ -7,7 +7,7 @@ import { legalInfo, isLegalInfoComplete } from "@/src/config/legal";
 
 export const metadata: Metadata = {
   title: "Mentions légales",
-  description: "Mentions légales du site Fluent.",
+  description: "Mentions légales du site Vozel.",
 };
 
 /**
@@ -24,17 +24,17 @@ export default function LegalPage() {
       <SiteHeader />
 
       <main className="flex-1">
-        <section className="bg-fluent-ink pt-[var(--nav-height)]">
+        <section className="bg-vozel-ink pt-[var(--nav-height)]">
           <div className="mx-auto max-w-[var(--content-narrow)] px-6 pt-20 pb-12 sm:pt-28 sm:pb-16">
             <Reveal>
-              <h1 className="font-[family-name:var(--font-the-seasons)] text-4xl sm:text-5xl tracking-tight text-fluent-white text-center leading-[1.08]">
+              <h1 className="font-[family-name:var(--font-the-seasons)] text-4xl sm:text-5xl tracking-tight text-vozel-white text-center leading-[1.08]">
                 Mentions légales
               </h1>
             </Reveal>
           </div>
         </section>
 
-        <section className="bg-fluent-ink pb-[var(--section-gap)]">
+        <section className="bg-vozel-ink pb-[var(--section-gap)]">
           <div className="mx-auto max-w-[var(--content-narrow)] px-6">
             {hasInfo ? (
               <div className="flex flex-col gap-10">
@@ -75,7 +75,7 @@ export default function LegalPage() {
                 )}
 
                 <LegalSection title="Propriété intellectuelle">
-                  <p className="text-sm text-fluent-muted-dark leading-relaxed">
+                  <p className="text-sm text-vozel-muted-dark leading-relaxed">
                     L&apos;ensemble du contenu du site (textes, images, logo,
                     charte graphique) est protégé par le droit d&apos;auteur et
                     le droit des marques. Toute reproduction sans autorisation
@@ -84,7 +84,7 @@ export default function LegalPage() {
                 </LegalSection>
 
                 <LegalSection title="Limitation de responsabilité">
-                  <p className="text-sm text-fluent-muted-dark leading-relaxed">
+                  <p className="text-sm text-vozel-muted-dark leading-relaxed">
                     Les informations présentes sur ce site sont fournies à titre
                     indicatif. L&apos;éditeur ne peut garantir l&apos;exactitude
                     ou l&apos;exhaustivité des informations publiées.
@@ -93,12 +93,12 @@ export default function LegalPage() {
               </div>
             ) : (
               <div className="text-center py-12">
-                <p className="text-sm text-fluent-muted-dark leading-relaxed max-w-md mx-auto">
+                <p className="text-sm text-vozel-muted-dark leading-relaxed max-w-md mx-auto">
                   Les informations légales complètes seront publiées
                   prochainement. En attendant, vous pouvez consulter notre{" "}
                   <a
                     href="/privacy"
-                    className="underline underline-offset-4 hover:text-fluent-white transition-colors"
+                    className="underline underline-offset-4 hover:text-vozel-white transition-colors"
                   >
                     politique de confidentialité
                   </a>
@@ -127,7 +127,7 @@ function LegalSection({
   return (
     <Reveal>
       <section className="space-y-3">
-        <h2 className="font-[family-name:var(--font-the-seasons)] text-xl text-fluent-white leading-snug">
+        <h2 className="font-[family-name:var(--font-the-seasons)] text-xl text-vozel-white leading-snug">
           {title}
         </h2>
         {children}
@@ -141,8 +141,8 @@ function LegalField({ label, value }: { label: string; value: string }) {
   if (!value) return null;
   return (
     <div className="flex flex-col sm:flex-row sm:justify-between gap-0.5">
-      <dt className="text-xs text-fluent-muted-dark">{label}</dt>
-      <dd className="text-sm text-fluent-white">{value}</dd>
+      <dt className="text-xs text-vozel-muted-dark">{label}</dt>
+      <dd className="text-sm text-vozel-white">{value}</dd>
     </div>
   );
 }

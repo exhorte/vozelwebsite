@@ -7,11 +7,11 @@ type ButtonSize = "default" | "sm" | "lg";
 
 const variantStyles: Record<ButtonVariant, string> = {
   primary:
-    "bg-fluent-white text-fluent-ink hover:bg-fluent-paper focus-visible:bg-fluent-paper disabled:bg-fluent-disabled disabled:text-fluent-muted-dark",
+    "bg-vozel-white text-vozel-ink hover:bg-vozel-paper focus-visible:bg-vozel-paper disabled:bg-vozel-disabled disabled:text-vozel-muted-dark",
   secondary:
-    "border border-fluent-border-dark text-fluent-white hover:border-fluent-white/20 hover:bg-fluent-surface focus-visible:border-fluent-white/20 focus-visible:bg-fluent-surface disabled:border-fluent-disabled disabled:text-fluent-disabled",
+    "border border-vozel-border-dark text-vozel-white hover:border-vozel-white/20 hover:bg-vozel-surface focus-visible:border-vozel-white/20 focus-visible:bg-vozel-surface disabled:border-vozel-disabled disabled:text-vozel-disabled",
   ghost:
-    "text-fluent-muted-dark hover:text-fluent-white focus-visible:text-fluent-white disabled:text-fluent-disabled",
+    "text-vozel-muted-dark hover:text-vozel-white focus-visible:text-vozel-white disabled:text-vozel-disabled",
 };
 
 const sizeStyles: Record<ButtonSize, string> = {
@@ -45,7 +45,7 @@ export function Button({
   ...props
 }: ButtonProps) {
   const classes = cx(
-    "inline-flex items-center justify-center gap-2 rounded-full font-medium transition-colors duration-[var(--duration-fast)] ease-out focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fluent-focus disabled:cursor-not-allowed select-none",
+    "inline-flex items-center justify-center gap-2 rounded-full font-medium transition-colors duration-[var(--duration-fast)] ease-out focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vozel-focus disabled:cursor-not-allowed select-none",
     variantStyles[variant],
     sizeStyles[size],
     className

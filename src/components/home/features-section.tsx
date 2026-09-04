@@ -12,7 +12,7 @@ import { cx } from "@/src/lib/utils";
  */
 export function FeaturesSection() {
   return (
-    <section id="features" className="bg-fluent-ink">
+    <section id="features" className="bg-vozel-ink">
       <div className="mx-auto max-w-[var(--content-max)] px-6 py-[var(--section-gap)]">
         <Reveal>
           <SectionHeading
@@ -30,18 +30,18 @@ export function FeaturesSection() {
                 <Icon
                   name={feature.icon as IconName}
                   size={22}
-                  className="text-fluent-muted-dark"
+                  className="text-vozel-muted-dark"
                   strokeWidth={1.5}
                 />
-                <h3 className="font-[family-name:var(--font-the-seasons)] text-lg text-fluent-white leading-snug">
+                <h3 className="font-[family-name:var(--font-the-seasons)] text-lg text-vozel-white leading-snug">
                   {feature.title}
                 </h3>
                 <p
                   className={cx(
                     "text-sm leading-relaxed",
                     feature.needsVerification
-                      ? "text-fluent-muted-dark"
-                      : "text-fluent-muted-dark"
+                      ? "text-vozel-muted-dark"
+                      : "text-vozel-muted-dark"
                   )}
                 >
                   {feature.description}

@@ -1,7 +1,7 @@
 // import localFont from "next/font/local";
 
 /**
- * The Seasons — Fluent's editorial brand typeface.
+ * The Seasons — Vozel's editorial brand typeface.
  *
  * Used for: titles, large numbers, slogans, pull quotes,
  * and editorial elements throughout the site.

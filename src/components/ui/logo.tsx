@@ -12,9 +12,13 @@ interface LogoProps {
 }
 
 /**
- * Fluent logo component.
+ * Vozel logo component.
  *
- * By default shows both the symbol and the name "Fluent".
+ * By default shows both the symbol and the wordmark "Vozel.". The trailing
+ * dot matches the real logotype (see `public/assets/example/*.png`) and is
+ * only used here, where the name is displayed in isolation as a brand
+ * mark — never in running text elsewhere in the site (siteConfig.name is
+ * "Vozel", no dot, for titles/aria-labels/body copy).
  * On dark backgrounds use scheme="dark" (white logo).
  * On light backgrounds use scheme="light" (black logo).
  */
@@ -45,10 +49,10 @@ export function Logo({
         <span
           className={cx(
             "font-[family-name:var(--font-the-seasons)] text-xl tracking-wide",
-            scheme === "dark" ? "text-fluent-white" : "text-fluent-ink"
+            scheme === "dark" ? "text-vozel-white" : "text-vozel-ink"
           )}
         >
-          {siteConfig.name}
+          {siteConfig.name}.
         </span>
       )}
     </div>

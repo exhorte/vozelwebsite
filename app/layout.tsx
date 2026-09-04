@@ -22,13 +22,12 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   applicationName: siteConfig.name,
-  authors: [{ name: "Fluent" }],
+  authors: [{ name: "Vozel" }],
   generator: null, // Remove "Next.js" from meta generator tag
   keywords: [
     "dictée",
     "transcription vocale",
     "Windows",
-    "Whisper",
     "local",
     "confidentialité",
     "français",
@@ -45,35 +44,30 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     url: siteConfig.url,
     locale: "fr_FR",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: siteConfig.name,
-      },
-    ],
+    // No `images` entry here on purpose: `/og-image.png` doesn't exist as a
+    // static file. `app/opengraph-image.tsx` generates it via `next/og` and
+    // Next.js merges it into this metadata automatically.
   },
   twitter: {
     card: "summary_large_image",
     title: `${siteConfig.name} — ${siteConfig.tagline}`,
     description: siteConfig.description,
-    images: ["/og-image.png"],
+    // Same note as openGraph.images above — handled by opengraph-image.tsx.
   },
   icons: {
     icon: [
       {
-        url: "/assets/ico-white/Fluent-white-32x32.ico",
+        url: "/assets/ico-white/Vozel-white-32x32.ico",
         sizes: "32x32",
       },
       {
-        url: "/assets/ico-white/Fluent-white-16x16.ico",
+        url: "/assets/ico-white/Vozel-white-16x16.ico",
         sizes: "16x16",
       },
     ],
     apple: [
       {
-        url: "/assets/ico-large/Fluent-white-520x520.png",
+        url: "/assets/ico-large/Vozel-white-520x520.png",
         sizes: "180x180",
         type: "image/png",
       },
@@ -110,7 +104,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-full flex flex-col bg-fluent-ink text-fluent-white antialiased">
+      <body className="min-h-full flex flex-col bg-vozel-ink text-vozel-white antialiased">
         {children}
       </body>
     </html>

@@ -44,7 +44,7 @@ export function MobileNavigation({ open, onClose }: MobileNavigationProps) {
     >
       {/* Backdrop */}
       <div
-        className="absolute inset-0 bg-fluent-ink/80 backdrop-blur-sm"
+        className="absolute inset-0 bg-vozel-ink/80 backdrop-blur-sm"
         onClick={onClose}
         aria-hidden="true"
       />
@@ -53,7 +53,7 @@ export function MobileNavigation({ open, onClose }: MobileNavigationProps) {
       <div
         ref={panelRef}
         id="mobile-menu"
-        className="absolute top-0 right-0 bottom-0 w-full max-w-sm bg-fluent-surface px-8 py-24 flex flex-col gap-8"
+        className="absolute top-0 right-0 bottom-0 w-full max-w-sm bg-vozel-surface px-8 py-24 flex flex-col gap-8"
       >
         {/* Navigation links */}
         <nav className="flex flex-col gap-6" aria-label="Navigation mobile">
@@ -62,7 +62,7 @@ export function MobileNavigation({ open, onClose }: MobileNavigationProps) {
               key={item.href}
               href={item.href}
               ref={i === 0 ? firstFocusableRef : undefined}
-              className="text-lg text-fluent-white hover:text-fluent-muted-dark transition-colors duration-[var(--duration-fast)] focus-visible:outline-2 focus-visible:outline-fluent-focus rounded-sm py-1"
+              className="text-lg text-vozel-white hover:text-vozel-muted-dark transition-colors duration-[var(--duration-fast)] focus-visible:outline-2 focus-visible:outline-vozel-focus rounded-sm py-1"
               onClick={onClose}
             >
               {item.label}
@@ -71,7 +71,7 @@ export function MobileNavigation({ open, onClose }: MobileNavigationProps) {
         </nav>
 
         {/* Divider */}
-        <hr className="border-fluent-border-dark" />
+        <hr className="border-vozel-border-dark" />
 
         {/* CTA */}
         <Button
@@ -90,7 +90,7 @@ export function MobileNavigation({ open, onClose }: MobileNavigationProps) {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm text-fluent-muted-dark hover:text-fluent-white transition-colors duration-[var(--duration-fast)] focus-visible:outline-2 focus-visible:outline-fluent-focus rounded-sm"
+              className="text-sm text-vozel-muted-dark hover:text-vozel-white transition-colors duration-[var(--duration-fast)] focus-visible:outline-2 focus-visible:outline-vozel-focus rounded-sm"
               onClick={onClose}
             >
               {item.label}

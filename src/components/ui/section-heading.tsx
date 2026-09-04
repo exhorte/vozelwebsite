@@ -28,11 +28,11 @@ export function SectionHeading({
   className,
 }: SectionHeadingProps) {
   const labelColor =
-    scheme === "dark" ? "text-fluent-muted-dark" : "text-fluent-muted-light";
+    scheme === "dark" ? "text-vozel-muted-dark" : "text-vozel-muted-light";
   const titleColor =
-    scheme === "dark" ? "text-fluent-white" : "text-fluent-ink";
+    scheme === "dark" ? "text-vozel-white" : "text-vozel-ink";
   const subtitleColor =
-    scheme === "dark" ? "text-fluent-muted-dark" : "text-fluent-muted-light";
+    scheme === "dark" ? "text-vozel-muted-dark" : "text-vozel-muted-light";
 
   return (
     <div

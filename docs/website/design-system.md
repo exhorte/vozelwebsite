@@ -1,8 +1,8 @@
-# Fluent Website — Design System
+# Vozel Website — Design System
 
 ## Direction Artistique
 
-Inspirée du guide de marque Fluent :
+Inspirée du guide de marque Vozel :
 - Fond noir ou presque noir (`#101010`)
 - Surfaces blanc cassé / papier (`#f4f1ec`)
 - Palette majoritairement monochrome
@@ -18,30 +18,30 @@ Inspirée du guide de marque Fluent :
 
 | Token | Hex | Usage |
 |-------|-----|-------|
-| `--fluent-ink` | `#101010` | Fond principal sombre |
-| `--fluent-surface` | `#1b1b1b` | Surface secondaire sombre |
-| `--fluent-surface-elevated` | `#222222` | Cartes, conteneurs surélevés |
-| `--fluent-paper` | `#f4f1ec` | Fond clair (sections alternées) |
-| `--fluent-paper-dim` | `#e8e5df` | Fond clair atténué |
-| `--fluent-white` | `#ffffff` | Texte principal sur fond sombre |
+| `--vozel-ink` | `#101010` | Fond principal sombre |
+| `--vozel-surface` | `#1b1b1b` | Surface secondaire sombre |
+| `--vozel-surface-elevated` | `#222222` | Cartes, conteneurs surélevés |
+| `--vozel-paper` | `#f4f1ec` | Fond clair (sections alternées) |
+| `--vozel-paper-dim` | `#e8e5df` | Fond clair atténué |
+| `--vozel-white` | `#ffffff` | Texte principal sur fond sombre |
 
 ### Muted & Borders
 
 | Token | Hex | Usage |
 |-------|-----|-------|
-| `--fluent-muted-dark` | `#8a8882` | Texte secondaire sur fond sombre |
-| `--fluent-muted-light` | `#6b6862` | Texte secondaire sur fond clair |
-| `--fluent-border-dark` | `rgba(255,255,255,0.08)` | Séparateurs fond sombre |
-| `--fluent-border-light` | `rgba(16,16,16,0.10)` | Séparateurs fond clair |
+| `--vozel-muted-dark` | `#8a8882` | Texte secondaire sur fond sombre |
+| `--vozel-muted-light` | `#6b6862` | Texte secondaire sur fond clair |
+| `--vozel-border-dark` | `rgba(255,255,255,0.08)` | Séparateurs fond sombre |
+| `--vozel-border-light` | `rgba(16,16,16,0.10)` | Séparateurs fond clair |
 
 ### Functional
 
 | Token | Hex | Usage |
 |-------|-----|-------|
-| `--fluent-focus` | `#4a90d9` | Anneau de focus clavier |
-| `--fluent-error` | `#d94a4a` | États d'erreur |
-| `--fluent-success` | `#4a9d5b` | Confirmations |
-| `--fluent-disabled` | `rgba(255,255,255,0.25)` | Éléments désactivés |
+| `--vozel-focus` | `#4a90d9` | Anneau de focus clavier |
+| `--vozel-error` | `#d94a4a` | États d'erreur |
+| `--vozel-success` | `#4a9d5b` | Confirmations |
+| `--vozel-disabled` | `rgba(255,255,255,0.25)` | Éléments désactivés |
 
 ## Typography
 

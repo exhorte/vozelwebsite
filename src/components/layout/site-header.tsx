@@ -58,7 +58,7 @@ export function SiteHeader() {
         ref={headerRef}
         className={`fixed top-0 left-0 right-0 z-50 h-[var(--nav-height)] transition-colors duration-[var(--duration-normal)] ${
           scrolled
-            ? "bg-fluent-ink/95 backdrop-blur-sm border-b border-fluent-border-dark"
+            ? "bg-vozel-ink/95 backdrop-blur-sm border-b border-vozel-border-dark"
             : "bg-transparent border-b border-transparent"
         }`}
       >
@@ -69,8 +69,8 @@ export function SiteHeader() {
           {/* Logo + brand */}
           <Link
             href="/"
-            className="focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-fluent-focus rounded-sm"
-            aria-label="Fluent — Accueil"
+            className="focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-vozel-focus rounded-sm"
+            aria-label="Vozel — Accueil"
           >
             <Logo scheme="dark" size="medium" />
           </Link>
@@ -81,7 +81,7 @@ export function SiteHeader() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm text-fluent-muted-dark hover:text-fluent-white transition-colors duration-[var(--duration-fast)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-fluent-focus rounded-sm"
+                className="text-sm text-vozel-muted-dark hover:text-vozel-white transition-colors duration-[var(--duration-fast)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-vozel-focus rounded-sm"
               >
                 {item.label}
               </Link>
@@ -98,7 +98,7 @@ export function SiteHeader() {
           {/* Mobile menu button */}
           <button
             type="button"
-            className="md:hidden flex items-center justify-center w-10 h-10 text-fluent-white focus-visible:outline-2 focus-visible:outline-fluent-focus rounded-sm"
+            className="md:hidden flex items-center justify-center w-10 h-10 text-vozel-white focus-visible:outline-2 focus-visible:outline-vozel-focus rounded-sm"
             onClick={() => setMobileOpen((prev) => !prev)}
             aria-expanded={mobileOpen}
             aria-controls="mobile-menu"

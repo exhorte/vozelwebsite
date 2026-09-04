@@ -20,7 +20,7 @@ import { formatDate } from "@/src/lib/utils";
  */
 export function DownloadCTA() {
   return (
-    <section id="download" className="bg-fluent-surface">
+    <section id="download" className="bg-vozel-surface">
       <div className="mx-auto max-w-[var(--content-narrow)] px-6 py-[var(--section-gap)]">
         <div className="flex flex-col items-center text-center">
           <Reveal>
@@ -35,7 +35,7 @@ export function DownloadCTA() {
             />
 
             <SectionHeading
-              title="Prêt à essayer Fluent ?"
+              title="Prêt à essayer Vozel ?"
               subtitle="Téléchargez la dernière version et commencez à transformer votre voix en texte."
               scheme="dark"
               className="mb-10"
@@ -43,17 +43,17 @@ export function DownloadCTA() {
           </Reveal>
 
           <Reveal delay={100}>
-            <div className="w-full max-w-sm mx-auto bg-fluent-surface-elevated border border-fluent-border-dark rounded-lg p-8">
+            <div className="w-full max-w-sm mx-auto bg-vozel-surface-elevated border border-vozel-border-dark rounded-lg p-8">
               {/* Release info */}
               <div className="flex flex-col items-center gap-6">
                 {currentRelease.isAvailable ? (
                   <>
                     {/* Available state */}
                     <div className="flex flex-col items-center gap-2">
-                      <span className="text-xs tracking-[0.15em] uppercase text-fluent-muted-dark font-medium">
+                      <span className="text-xs tracking-[0.15em] uppercase text-vozel-muted-dark font-medium">
                         {channelLabels[currentRelease.channel]}
                       </span>
-                      <span className="font-[family-name:var(--font-the-seasons)] text-2xl text-fluent-white">
+                      <span className="font-[family-name:var(--font-the-seasons)] text-2xl text-vozel-white">
                         Version {currentRelease.version}
                       </span>
                     </div>
@@ -64,10 +64,10 @@ export function DownloadCTA() {
                       size="lg"
                       className="w-full"
                     >
-                      Télécharger Fluent pour Windows
+                      Télécharger Vozel pour Windows
                     </Button>
 
-                    <div className="flex flex-col items-center gap-1 text-xs text-fluent-muted-dark">
+                    <div className="flex flex-col items-center gap-1 text-xs text-vozel-muted-dark">
                       {currentRelease.fileName && (
                         <span>{currentRelease.fileName}</span>
                       )}
@@ -85,7 +85,7 @@ export function DownloadCTA() {
 
                     <Link
                       href={currentRelease.releaseNotesUrl}
-                      className="text-xs text-fluent-muted-dark hover:text-fluent-white underline underline-offset-4 transition-colors focus-visible:outline-2 focus-visible:outline-fluent-focus rounded-sm"
+                      className="text-xs text-vozel-muted-dark hover:text-vozel-white underline underline-offset-4 transition-colors focus-visible:outline-2 focus-visible:outline-vozel-focus rounded-sm"
                     >
                       Voir les notes de version
                     </Link>
@@ -94,10 +94,10 @@ export function DownloadCTA() {
                   <>
                     {/* Coming soon state */}
                     <div className="flex flex-col items-center gap-2">
-                      <span className="text-xs tracking-[0.15em] uppercase text-fluent-muted-dark font-medium">
+                      <span className="text-xs tracking-[0.15em] uppercase text-vozel-muted-dark font-medium">
                         À venir
                       </span>
-                      <span className="font-[family-name:var(--font-the-seasons)] text-2xl text-fluent-white">
+                      <span className="font-[family-name:var(--font-the-seasons)] text-2xl text-vozel-white">
                         Bientôt disponible
                       </span>
                     </div>
@@ -106,8 +106,8 @@ export function DownloadCTA() {
                       Téléchargement bientôt disponible
                     </Button>
 
-                    <p className="text-sm text-fluent-muted-dark">
-                      La première version publique de Fluent est en préparation.
+                    <p className="text-sm text-vozel-muted-dark">
+                      La première version publique de Vozel est en préparation.
                       Revenez bientôt pour télécharger l&apos;application.
                     </p>
                   </>
@@ -119,10 +119,10 @@ export function DownloadCTA() {
           {currentRelease.isAvailable && currentRelease.sha256 && (
             <Reveal delay={200}>
               <div className="mt-8 flex flex-col items-center gap-2">
-                <span className="text-xs text-fluent-muted-dark">
+                <span className="text-xs text-vozel-muted-dark">
                   Checksum SHA-256
                 </span>
-                <code className="text-xs text-fluent-muted-dark/80 font-mono break-all max-w-sm">
+                <code className="text-xs text-vozel-muted-dark/80 font-mono break-all max-w-sm">
                   {currentRelease.sha256}
                 </code>
               </div>

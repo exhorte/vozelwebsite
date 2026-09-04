@@ -11,7 +11,7 @@ import { DownloadCTA } from "@/src/components/home/download-cta";
 import { FaqPreview } from "@/src/components/home/faq-preview";
 
 /**
- * Fluent homepage.
+ * Vozel homepage.
  *
  * Section order follows the narrative:
  * Discover → Understand → Trust → Download.
@@ -25,10 +25,10 @@ export default function HomePage() {
         {/* 1. Hero — First impression */}
         <HeroSection />
 
-        {/* 2. Product preview — What it looks like */}
+        {/* 2. Brand identity — no real screenshot yet, see product-preview.tsx */}
         <ProductPreview />
 
-        {/* 3. Value proposition — Why Fluent (light surface) */}
+        {/* 3. Value proposition — Why Vozel (light surface) */}
         <ValueSection />
 
         {/* 4. Features — What it does */}
