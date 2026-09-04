@@ -9,9 +9,9 @@ import { Divider } from "@/src/components/ui/divider";
 import { Reveal } from "@/src/components/ui/reveal";
 
 export const metadata: Metadata = {
-  title: "Télécharger",
+  title: "Download",
   description:
-    "Téléchargez Vozel pour Windows. Instructions d'installation, checksum SHA-256, et notes de version.",
+    "Download Vozel for Windows. Installation instructions, SHA-256 checksum, and release notes.",
 };
 
 export default function DownloadPage() {
@@ -25,11 +25,11 @@ export default function DownloadPage() {
           <div className="mx-auto max-w-[var(--content-narrow)] px-6 pt-20 pb-12 sm:pt-28 sm:pb-16">
             <Reveal>
               <h1 className="font-[family-name:var(--font-the-seasons)] text-4xl sm:text-5xl lg:text-6xl tracking-tight text-vozel-white text-center leading-[1.08]">
-                Télécharger Vozel
+                Download Vozel
               </h1>
               <p className="mt-4 text-base sm:text-lg text-vozel-muted-dark text-center max-w-md mx-auto">
-                Téléchargez la dernière version de Vozel pour Windows et
-                commencez à transformer votre voix en texte.
+                Download the latest version of Vozel for Windows and start
+                turning your voice into text.
               </p>
             </Reveal>
           </div>
@@ -53,7 +53,7 @@ export default function DownloadPage() {
           <div className="mx-auto max-w-[var(--content-narrow)] px-6 py-[var(--section-gap)]">
             <Reveal>
               <h2 className="font-[family-name:var(--font-the-seasons)] text-2xl sm:text-3xl text-vozel-white text-center mb-12">
-                Guide d&apos;installation
+                Installation guide
               </h2>
             </Reveal>
             <Reveal delay={100}>

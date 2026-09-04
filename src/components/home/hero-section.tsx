@@ -39,7 +39,7 @@ export function HeroSection() {
         <div className="flex flex-col items-center text-center gap-8">
           {/* Small label */}
           <span className="text-xs tracking-[0.2em] uppercase font-medium text-vozel-muted-dark">
-            Application de dictée pour Windows
+            Dictation app for Windows
           </span>
 
           {/* Logo symbol */}
@@ -65,8 +65,8 @@ export function HeroSection() {
 
           {/* Value proposition */}
           <p className="max-w-md text-base sm:text-lg leading-relaxed text-vozel-muted-dark">
-            Transformez votre voix en texte fluide, directement dans les
-            applications que vous utilisez déjà.
+            Turn your voice into fluid text, directly inside the apps you
+            already use.
           </p>
 
           {/* CTAs */}
@@ -78,11 +78,11 @@ export function HeroSection() {
               disabled={!currentRelease.isAvailable}
             >
               {currentRelease.isAvailable
-                ? "Télécharger pour Windows"
-                : "Téléchargement bientôt disponible"}
+                ? "Download for Windows"
+                : "Download coming soon"}
             </Button>
             <Button href="/#how-it-works" variant="ghost" size="default">
-              Découvrir Vozel
+              Discover Vozel
             </Button>
           </div>
 
@@ -94,7 +94,7 @@ export function HeroSection() {
               </span>
             )}
             <span className="text-xs text-vozel-muted-dark/70">
-              Compatible Windows 10 et 11 &middot; Transcription locale
+              Compatible with Windows 10 & 11 &middot; Local transcription
             </span>
           </div>
         </div>

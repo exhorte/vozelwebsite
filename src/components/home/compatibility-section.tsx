@@ -13,9 +13,9 @@ export function CompatibilitySection() {
       <div className="mx-auto max-w-[var(--content-max)] px-6 py-[var(--section-gap)]">
         <Reveal>
           <SectionHeading
-            label="Compatibilité"
-            title="Conçu pour Windows."
-            subtitle="Vozel s'intègre nativement dans l'environnement Windows pour une expérience fluide et sans friction."
+            label="Compatibility"
+            title="Built for Windows."
+            subtitle="Vozel integrates natively into the Windows environment for a smooth, frictionless experience."
             scheme="dark"
             className="mb-12 sm:mb-16"
           />
@@ -47,33 +47,33 @@ export function CompatibilitySection() {
 
 const specs = [
   {
-    label: "Système d'exploitation",
-    value: "Windows 10 (21H2+) et Windows 11",
-    note: "Architecture x64",
+    label: "Operating system",
+    value: "Windows 10 (21H2+) and Windows 11",
+    note: "x64 architecture",
   },
   {
     label: "Microphone",
-    value: "Microphone intégré ou externe",
-    note: "Qualité standard suffisante",
+    value: "Built-in or external microphone",
+    note: "Standard quality is enough",
   },
   {
-    label: "Espace disque",
-    value: "~2 Go",
-    note: "Modèles de transcription et de nettoyage locaux — estimation",
+    label: "Disk space",
+    value: "~2 GB",
+    note: "Local transcription and cleanup models — estimate",
   },
   {
-    label: "Mémoire vive",
-    value: "8 Go recommandés",
-    note: "4 Go minimum — estimation",
+    label: "RAM",
+    value: "8 GB recommended",
+    note: "4 GB minimum — estimate",
   },
   {
-    label: "Connexion Internet",
-    value: "Non requise",
-    note: "Sauf fonctions Cloud optionnelles",
+    label: "Internet connection",
+    value: "Not required",
+    note: "Except for optional Cloud features",
   },
   {
     label: "Installation",
-    value: "Par utilisateur",
-    note: "Droits administrateur non requis",
+    value: "Per-user",
+    note: "Administrator rights not required",
   },
 ];

@@ -4,7 +4,7 @@ import { SiteFooter } from "@/src/components/layout/site-footer";
 import { Button } from "@/src/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Page introuvable",
+  title: "Page not found",
 };
 
 /**
@@ -28,21 +28,21 @@ export default function NotFoundPage() {
           {/* Message */}
           <div className="flex flex-col gap-3">
             <h1 className="font-[family-name:var(--font-the-seasons)] text-2xl sm:text-3xl text-vozel-white leading-snug">
-              Cette page n&apos;existe pas.
+              This page doesn&apos;t exist.
             </h1>
             <p className="text-sm text-vozel-muted-dark max-w-sm leading-relaxed">
-              La page que vous cherchez a peut-être été déplacée ou n&apos;existe
-              plus.
+              The page you&apos;re looking for may have been moved or no longer
+              exists.
             </p>
           </div>
 
           {/* Actions */}
           <div className="flex items-center gap-4 mt-4">
             <Button href="/" variant="primary" size="default">
-              Retour à l&apos;accueil
+              Back to home
             </Button>
             <Button href="/faq" variant="ghost" size="default">
-              Consulter la FAQ
+              Check the FAQ
             </Button>
           </div>
         </div>

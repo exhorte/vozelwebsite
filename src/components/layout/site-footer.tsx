@@ -29,7 +29,7 @@ export function SiteFooter() {
           <div className="flex flex-wrap gap-x-12 gap-y-4">
             <nav
               className="flex flex-col gap-2"
-              aria-label="Navigation pied de page"
+              aria-label="Footer navigation"
             >
               {mainNavigation.map((item) => (
                 <Link
@@ -43,7 +43,7 @@ export function SiteFooter() {
             </nav>
             <nav
               className="flex flex-col gap-2"
-              aria-label="Pages légales et informations"
+              aria-label="Legal and informational pages"
             >
               {footerNavigation.map((item) => (
                 <Link
@@ -62,7 +62,7 @@ export function SiteFooter() {
 
         {/* Bottom section */}
         <p className="text-xs text-vozel-muted-dark">
-          &copy; {currentYear()} {siteConfig.name}. Tous droits réservés.
+          &copy; {currentYear()} {siteConfig.name}. All rights reserved.
         </p>
       </div>
     </footer>

@@ -15,58 +15,58 @@ export interface Feature {
 
 export const features: Feature[] = [
   {
-    title: "Transcription locale",
+    title: "Local transcription",
     description:
-      "Vozel transcrit votre voix directement sur votre machine grâce à Parakeet-TDT, son moteur de reconnaissance vocale local. Aucune connexion Internet n'est requise pour la dictée.",
+      "Vozel transcribes your voice directly on your machine using Parakeet-TDT, its local speech-recognition engine. No Internet connection is required for dictation.",
     icon: "shield",
     needsVerification: false,
   },
   {
-    title: "Français et anglais",
+    title: "French and English",
     description:
-      "Changez de langue de transcription selon vos besoins. Vozel prend en charge le français et l'anglais.",
+      "Switch transcription language as needed. Vozel supports both French and English.",
     icon: "globe",
     needsVerification: true,
   },
   {
-    title: "Nettoyage IA local",
+    title: "Local AI cleanup",
     description:
-      "Activez le nettoyage optionnel par modèle de langue local pour corriger ponctuation et grammaire — désactivable à tout moment, 100 % hors ligne.",
+      "Turn on optional local-language-model cleanup to fix punctuation and grammar — can be disabled anytime, 100% offline.",
     icon: "edit",
     needsVerification: false,
   },
   {
-    title: "Dictionnaire personnalisé",
+    title: "Custom dictionary",
     description:
-      "Ajoutez vos propres corrections (noms propres, jargon) : le texte reconnu est remplacé par la forme voulue après la transcription, avant l'insertion.",
+      "Add your own corrections (proper names, jargon): the recognized text is replaced by the intended form after transcription, before insertion.",
     icon: "book",
     needsVerification: false,
   },
   {
-    title: "Insertion dans la zone active",
+    title: "Insertion into the active field",
     description:
-      "Le texte transcrit s'insère directement dans le champ de saisie où se trouve votre curseur, sans changer d'application.",
+      "The transcribed text is inserted directly into the input field where your cursor is, without switching apps.",
     icon: "cursor",
     needsVerification: false,
   },
   {
-    title: "Fonctionnement hors ligne",
+    title: "Works offline",
     description:
-      "Le moteur de transcription fonctionne entièrement hors ligne. Vos données vocales ne quittent jamais votre appareil, sauf activation manuelle d'une option Cloud.",
+      "The transcription engine runs entirely offline. Your voice data never leaves your device, unless you manually enable a Cloud option.",
     icon: "wifi-off",
     needsVerification: false,
   },
   {
-    title: "Historique local",
+    title: "Local history",
     description:
-      "Consultez l'historique de vos sessions de dictée, stocké localement et sous votre contrôle.",
+      "Browse the history of your dictation sessions, stored locally and under your control.",
     icon: "clock",
     needsVerification: false,
   },
   {
-    title: "Déclenchement instantané",
+    title: "Instant trigger",
     description:
-      "Maintenez Ctrl+Win, où que vous soyez, pour dicter — relâchez pour insérer. Un geste unique et fixe, ou le bouton du widget flottant : pas de raccourci à configurer.",
+      "Hold Ctrl+Win, wherever you are, to dictate — release to insert. A single, fixed gesture, or the floating widget button: no shortcut to configure.",
     icon: "keyboard",
     needsVerification: false,
   },

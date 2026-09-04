@@ -8,8 +8,8 @@ import { formatDate } from "@/src/lib/utils";
 import { channelLabels } from "@/src/config/release";
 
 export const metadata: Metadata = {
-  title: "Notes de version",
-  description: "Historique des versions et notes de release de Vozel.",
+  title: "Release Notes",
+  description: "Version history and release notes for Vozel.",
 };
 
 export default function ReleaseNotesPage() {
@@ -22,10 +22,10 @@ export default function ReleaseNotesPage() {
           <div className="mx-auto max-w-[var(--content-narrow)] px-6 pt-20 pb-12 sm:pt-28 sm:pb-16">
             <Reveal>
               <h1 className="font-[family-name:var(--font-the-seasons)] text-4xl sm:text-5xl tracking-tight text-vozel-white text-center leading-[1.08]">
-                Notes de version
+                Release notes
               </h1>
               <p className="mt-4 text-base sm:text-lg text-vozel-muted-dark text-center max-w-md mx-auto">
-                Suivez l&apos;évolution de Vozel, version par version.
+                Follow Vozel&apos;s evolution, version by version.
               </p>
             </Reveal>
           </div>
@@ -82,7 +82,7 @@ function ReleaseCard({ release }: { release: (typeof releaseNotes)[number] }) {
       {release.highlights.length > 0 && (
         <div className="mb-4">
           <h3 className="text-xs tracking-[0.15em] uppercase text-vozel-muted-dark font-medium mb-2">
-            Nouveautés
+            What&apos;s new
           </h3>
           <ul className="list-disc pl-5 space-y-1">
             {release.highlights.map((h, i) => (
@@ -97,7 +97,7 @@ function ReleaseCard({ release }: { release: (typeof releaseNotes)[number] }) {
       {release.fixes.length > 0 && (
         <div className="mb-4">
           <h3 className="text-xs tracking-[0.15em] uppercase text-vozel-muted-dark font-medium mb-2">
-            Corrections
+            Fixes
           </h3>
           <ul className="list-disc pl-5 space-y-1">
             {release.fixes.map((f, i) => (
@@ -112,7 +112,7 @@ function ReleaseCard({ release }: { release: (typeof releaseNotes)[number] }) {
       {release.knownIssues.length > 0 && (
         <div>
           <h3 className="text-xs tracking-[0.15em] uppercase text-vozel-muted-dark font-medium mb-2">
-            Problèmes connus
+            Known issues
           </h3>
           <ul className="list-disc pl-5 space-y-1">
             {release.knownIssues.map((issue, i) => (

@@ -35,8 +35,8 @@ export function DownloadCTA() {
             />
 
             <SectionHeading
-              title="Prêt à essayer Vozel ?"
-              subtitle="Téléchargez la dernière version et commencez à transformer votre voix en texte."
+              title="Ready to try Vozel?"
+              subtitle="Download the latest version and start turning your voice into text."
               scheme="dark"
               className="mb-10"
             />
@@ -64,7 +64,7 @@ export function DownloadCTA() {
                       size="lg"
                       className="w-full"
                     >
-                      Télécharger Vozel pour Windows
+                      Download Vozel for Windows
                     </Button>
 
                     <div className="flex flex-col items-center gap-1 text-xs text-vozel-muted-dark">
@@ -78,7 +78,7 @@ export function DownloadCTA() {
                       </span>
                       {currentRelease.publishedAt && (
                         <span>
-                          Publié le {formatDate(currentRelease.publishedAt)}
+                          Published on {formatDate(currentRelease.publishedAt)}
                         </span>
                       )}
                     </div>
@@ -87,7 +87,7 @@ export function DownloadCTA() {
                       href={currentRelease.releaseNotesUrl}
                       className="text-xs text-vozel-muted-dark hover:text-vozel-white underline underline-offset-4 transition-colors focus-visible:outline-2 focus-visible:outline-vozel-focus rounded-sm"
                     >
-                      Voir les notes de version
+                      View release notes
                     </Link>
                   </>
                 ) : (
@@ -95,20 +95,20 @@ export function DownloadCTA() {
                     {/* Coming soon state */}
                     <div className="flex flex-col items-center gap-2">
                       <span className="text-xs tracking-[0.15em] uppercase text-vozel-muted-dark font-medium">
-                        À venir
+                        Coming soon
                       </span>
                       <span className="font-[family-name:var(--font-the-seasons)] text-2xl text-vozel-white">
-                        Bientôt disponible
+                        Available soon
                       </span>
                     </div>
 
                     <Button variant="primary" size="lg" className="w-full" disabled>
-                      Téléchargement bientôt disponible
+                      Download coming soon
                     </Button>
 
                     <p className="text-sm text-vozel-muted-dark">
-                      La première version publique de Vozel est en préparation.
-                      Revenez bientôt pour télécharger l&apos;application.
+                      Vozel&apos;s first public release is in the works. Check
+                      back soon to download the app.
                     </p>
                   </>
                 )}

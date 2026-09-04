@@ -22,7 +22,7 @@ export function DownloadCard() {
         ) : (
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-vozel-border-dark text-xs text-vozel-muted-dark">
             <span className="w-1.5 h-1.5 rounded-full bg-vozel-muted-dark" />
-            À venir
+            Coming soon
           </span>
         )}
 
@@ -35,7 +35,7 @@ export function DownloadCard() {
           </h2>
           {!currentRelease.isAvailable && (
             <p className="text-sm text-vozel-muted-dark">
-              Première version en préparation
+              First release in the works
             </p>
           )}
         </div>
@@ -49,7 +49,7 @@ export function DownloadCard() {
             className="w-full max-w-xs"
           >
             <Icon name="download" size={18} strokeWidth={2} />
-            Télécharger pour Windows
+            Download for Windows
           </Button>
         ) : (
           <div className="flex flex-col items-center gap-2">
@@ -60,11 +60,11 @@ export function DownloadCard() {
               disabled
             >
               <Icon name="download" size={18} strokeWidth={2} />
-              Bientôt disponible
+              Coming soon
             </Button>
             <p className="text-sm text-vozel-muted-dark">
-              L&apos;application n&apos;est pas encore disponible au téléchargement.
-              Revenez prochainement.
+              The app isn&apos;t available for download yet. Check back
+              soon.
             </p>
           </div>
         )}

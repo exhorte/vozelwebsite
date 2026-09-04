@@ -16,9 +16,9 @@ export function PrivacySection() {
       <div className="mx-auto max-w-[var(--content-narrow)] px-6 py-[var(--section-gap)]">
         <Reveal>
           <SectionHeading
-            label="Confidentialité"
-            title="Vos mots restent sous votre contrôle."
-            subtitle="Vozel est conçu pour que vos données vocales ne quittent jamais votre machine, sauf si vous en décidez autrement."
+            label="Privacy"
+            title="Your words stay under your control."
+            subtitle="Vozel is designed so your voice data never leaves your machine, unless you decide otherwise."
             scheme="light"
             className="mb-16"
           />
@@ -56,9 +56,9 @@ export function PrivacySection() {
               href="/privacy"
               className="underline underline-offset-4 hover:text-vozel-ink transition-colors focus-visible:outline-2 focus-visible:outline-vozel-focus rounded-sm"
             >
-              Consultez notre politique de confidentialité
+              Read our privacy policy
             </Link>{" "}
-            pour plus de détails.
+            for more details.
           </p>
         </Reveal>
       </div>
@@ -68,23 +68,23 @@ export function PrivacySection() {
 
 const claims = [
   {
-    title: "La transcription fonctionne localement par défaut.",
+    title: "Transcription works locally by default.",
     description:
-      "Le moteur de transcription local (Parakeet-TDT) s'exécute directement sur votre machine. Votre voix est traitée sans jamais transiter par un serveur externe.",
+      "The local transcription engine (Parakeet-TDT) runs directly on your machine. Your voice is processed without ever going through an external server.",
   },
   {
-    title: "Votre historique reste sur votre appareil.",
+    title: "Your history stays on your device.",
     description:
-      "Les sessions de dictée et l'historique sont stockés localement. Vous pouvez les consulter ou les supprimer à tout moment.",
+      "Dictation sessions and history are stored locally. You can view or delete them at any time.",
   },
   {
-    title: "Les fonctions Cloud sont optionnelles.",
+    title: "Cloud features are optional.",
     description:
-      "Si des fonctionnalités Cloud sont disponibles, elles ne sont utilisées qu'après activation explicite dans les paramètres de l'application.",
+      "If Cloud features are available, they're only used after explicit activation in the app's settings.",
   },
   {
-    title: "Aucune collecte de données vocales.",
+    title: "No voice data collection.",
     description:
-      "Vozel ne collecte, n'enregistre et ne transmet aucune donnée vocale à des tiers. Votre voix est votre voix.",
+      "Vozel does not collect, record, or transmit any voice data to third parties. Your voice is your voice.",
   },
 ];

@@ -12,53 +12,53 @@ export interface FaqItem {
 
 export const faqItems: FaqItem[] = [
   {
-    question: "Vozel fonctionne-t-il sans Internet ?",
+    question: "Does Vozel work without Internet?",
     answer:
-      "Oui. La transcription s'effectue en local sur votre machine, via le moteur Parakeet-TDT. Aucune connexion Internet n'est nécessaire pour la dictée. Certaines fonctionnalités Cloud optionnelles (si configurées) peuvent nécessiter une connexion.",
+      "Yes. Transcription happens locally on your machine, via the Parakeet-TDT engine. No Internet connection is needed for dictation. Some optional Cloud features (if configured) may require a connection.",
   },
   {
-    question: "Quelles langues sont prises en charge ?",
+    question: "What languages are supported?",
     answer:
-      "Vozel prend en charge le français et l'anglais. Vous pouvez changer la langue de transcription depuis l'interface de l'application.",
+      "Vozel supports French and English. You can change the transcription language from the app's interface.",
   },
   {
-    question: "Où sont stockées mes données ?",
+    question: "Where is my data stored?",
     answer:
-      "Toutes vos données de dictée et votre historique sont stockés localement sur votre machine Windows. Rien n'est envoyé vers un serveur externe sans votre consentement explicite.",
+      "All your dictation data and history are stored locally on your Windows machine. Nothing is sent to an external server without your explicit consent.",
   },
   {
-    question: "Vozel fonctionne-t-il dans toutes les applications ?",
+    question: "Does Vozel work in every application?",
     answer:
-      "Vozel est conçu pour fonctionner dans la plupart des applications Windows acceptant la saisie de texte. Certaines applications avec des contrôles de saisie non standards peuvent avoir des limitations.",
+      "Vozel is designed to work in most Windows applications that accept text input. Some applications with non-standard input controls may have limitations.",
   },
   {
-    question: "Comment changer la langue de transcription ?",
+    question: "How do I change the transcription language?",
     answer:
-      "Vous pouvez changer la langue depuis les paramètres de Vozel. L'application prend en charge le basculement entre le français et l'anglais.",
+      "You can change the language from Vozel's settings. The app supports switching between French and English.",
   },
   {
-    question: "Comment installer une nouvelle version ?",
+    question: "How do I install a new version?",
     answer:
-      "Téléchargez la dernière version depuis le site officiel et exécutez l'installateur. Vozel peut également proposer une mise à jour automatique selon votre configuration.",
+      "Download the latest version from the official site and run the installer. Vozel may also offer an automatic update depending on your configuration.",
   },
   {
-    question: "Vozel utilise-t-il un service Cloud ?",
+    question: "Does Vozel use a Cloud service?",
     answer:
-      "Par défaut, Vozel fonctionne entièrement en local. Des fonctions Cloud optionnelles (comme l'utilisation de modèles plus avancés) peuvent être activées manuellement dans les paramètres.",
+      "By default, Vozel runs entirely locally. Optional Cloud features (such as using more advanced models) can be enabled manually in settings.",
   },
   {
-    question: "Puis-je désinstaller Vozel facilement ?",
+    question: "Can I uninstall Vozel easily?",
     answer:
-      "Oui. Vozel se désinstalle comme n'importe quelle application Windows, via Paramètres > Applications > Vozel > Désinstaller.",
+      "Yes. Vozel uninstalls like any Windows application, via Settings > Apps > Vozel > Uninstall.",
   },
   {
-    question: "Comment signaler un problème ?",
+    question: "How do I report an issue?",
     answer:
-      "Vous pouvez signaler un problème via la page de support du projet. Les informations de contact et les liens vers le dépôt du projet seront disponibles dans les notes de version.",
+      "You can report an issue via the project's support page. Contact information and links to the project repository will be available in the release notes.",
   },
   {
-    question: "Vozel est-il gratuit ?",
+    question: "Is Vozel free?",
     answer:
-      "Les informations concernant le modèle de distribution de Vozel seront communiquées lors de la publication de la première version stable.",
+      "Details about Vozel's distribution model will be announced when the first stable version is released.",
   },
 ];

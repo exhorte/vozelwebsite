@@ -40,7 +40,7 @@ export function MobileNavigation({ open, onClose }: MobileNavigationProps) {
       className="fixed inset-0 z-40 md:hidden"
       role="dialog"
       aria-modal="true"
-      aria-label="Menu de navigation"
+      aria-label="Navigation menu"
     >
       {/* Backdrop */}
       <div
@@ -56,7 +56,7 @@ export function MobileNavigation({ open, onClose }: MobileNavigationProps) {
         className="absolute top-0 right-0 bottom-0 w-full max-w-sm bg-vozel-surface px-8 py-24 flex flex-col gap-8"
       >
         {/* Navigation links */}
-        <nav className="flex flex-col gap-6" aria-label="Navigation mobile">
+        <nav className="flex flex-col gap-6" aria-label="Mobile navigation">
           {mainNavigation.map((item, i) => (
             <Link
               key={item.href}
@@ -85,7 +85,7 @@ export function MobileNavigation({ open, onClose }: MobileNavigationProps) {
         </Button>
 
         {/* Secondary links */}
-        <nav className="flex flex-col gap-4" aria-label="Navigation secondaire">
+        <nav className="flex flex-col gap-4" aria-label="Secondary navigation">
           {footerNavigation.map((item) => (
             <Link
               key={item.href}

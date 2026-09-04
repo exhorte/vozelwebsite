@@ -6,8 +6,8 @@ import { Reveal } from "@/src/components/ui/reveal";
 import { legalInfo, isLegalInfoComplete } from "@/src/config/legal";
 
 export const metadata: Metadata = {
-  title: "Mentions légales",
-  description: "Mentions légales du site Vozel.",
+  title: "Legal notice",
+  description: "Legal notice for the Vozel website.",
 };
 
 /**
@@ -28,7 +28,7 @@ export default function LegalPage() {
           <div className="mx-auto max-w-[var(--content-narrow)] px-6 pt-20 pb-12 sm:pt-28 sm:pb-16">
             <Reveal>
               <h1 className="font-[family-name:var(--font-the-seasons)] text-4xl sm:text-5xl tracking-tight text-vozel-white text-center leading-[1.08]">
-                Mentions légales
+                Legal notice
               </h1>
             </Reveal>
           </div>
@@ -39,13 +39,13 @@ export default function LegalPage() {
             {hasInfo ? (
               <div className="flex flex-col gap-10">
                 {legalInfo.publisherName && (
-                  <LegalSection title="Éditeur">
-                    <LegalField label="Nom" value={legalInfo.publisherName} />
+                  <LegalSection title="Publisher">
+                    <LegalField label="Name" value={legalInfo.publisherName} />
                     {legalInfo.legalForm && (
-                      <LegalField label="Forme juridique" value={legalInfo.legalForm} />
+                      <LegalField label="Legal form" value={legalInfo.legalForm} />
                     )}
                     {legalInfo.address && (
-                      <LegalField label="Adresse" value={legalInfo.address} />
+                      <LegalField label="Address" value={legalInfo.address} />
                     )}
                     {legalInfo.contactEmail && (
                       <LegalField label="Contact" value={legalInfo.contactEmail} />
@@ -54,53 +54,52 @@ export default function LegalPage() {
                 )}
 
                 {legalInfo.publicationDirector && (
-                  <LegalSection title="Direction de la publication">
+                  <LegalSection title="Publication management">
                     <LegalField
-                      label="Directeur de la publication"
+                      label="Publication director"
                       value={legalInfo.publicationDirector}
                     />
                   </LegalSection>
                 )}
 
                 {legalInfo.hostingProvider && (
-                  <LegalSection title="Hébergement">
-                    <LegalField label="Hébergeur" value={legalInfo.hostingProvider} />
+                  <LegalSection title="Hosting">
+                    <LegalField label="Host" value={legalInfo.hostingProvider} />
                     {legalInfo.hostingAddress && (
-                      <LegalField label="Adresse" value={legalInfo.hostingAddress} />
+                      <LegalField label="Address" value={legalInfo.hostingAddress} />
                     )}
                     {legalInfo.hostingWebsite && (
-                      <LegalField label="Site web" value={legalInfo.hostingWebsite} />
+                      <LegalField label="Website" value={legalInfo.hostingWebsite} />
                     )}
                   </LegalSection>
                 )}
 
-                <LegalSection title="Propriété intellectuelle">
+                <LegalSection title="Intellectual property">
                   <p className="text-sm text-vozel-muted-dark leading-relaxed">
-                    L&apos;ensemble du contenu du site (textes, images, logo,
-                    charte graphique) est protégé par le droit d&apos;auteur et
-                    le droit des marques. Toute reproduction sans autorisation
-                    est interdite.
+                    All content on this site (text, images, logo, visual
+                    identity) is protected by copyright and trademark law.
+                    Any reproduction without authorization is prohibited.
                   </p>
                 </LegalSection>
 
-                <LegalSection title="Limitation de responsabilité">
+                <LegalSection title="Limitation of liability">
                   <p className="text-sm text-vozel-muted-dark leading-relaxed">
-                    Les informations présentes sur ce site sont fournies à titre
-                    indicatif. L&apos;éditeur ne peut garantir l&apos;exactitude
-                    ou l&apos;exhaustivité des informations publiées.
+                    The information on this site is provided for guidance
+                    only. The publisher cannot guarantee the accuracy or
+                    completeness of the information published.
                   </p>
                 </LegalSection>
               </div>
             ) : (
               <div className="text-center py-12">
                 <p className="text-sm text-vozel-muted-dark leading-relaxed max-w-md mx-auto">
-                  Les informations légales complètes seront publiées
-                  prochainement. En attendant, vous pouvez consulter notre{" "}
+                  Complete legal information will be published soon. In the
+                  meantime, you can read our{" "}
                   <a
                     href="/privacy"
                     className="underline underline-offset-4 hover:text-vozel-white transition-colors"
                   >
-                    politique de confidentialité
+                    privacy policy
                   </a>
                   .
                 </p>

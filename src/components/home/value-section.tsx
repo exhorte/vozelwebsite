@@ -14,9 +14,9 @@ export function ValueSection() {
       <div className="mx-auto max-w-[var(--content-narrow)] px-6 py-[var(--section-gap)]">
         <Reveal>
           <SectionHeading
-            label="Pourquoi Vozel"
-            title="Votre pensée, sans interruption."
-            subtitle="Passez de l'idée au texte sans jamais quitter votre flux de travail."
+            label="Why Vozel"
+            title="Your thoughts, without interruption."
+            subtitle="Go from idea to text without ever leaving your flow."
             scheme="light"
             className="mb-16"
           />
@@ -55,18 +55,18 @@ export function ValueSection() {
 
 const steps = [
   {
-    title: "Parlez naturellement.",
+    title: "Speak naturally.",
     description:
-      "Activez la dictée et exprimez votre pensée à voix haute, comme si vous parliez à un collègue. Vozel capte votre voix sans vous interrompre.",
+      "Start dictation and say your thoughts out loud, as if you were talking to a colleague. Vozel captures your voice without interrupting you.",
   },
   {
-    title: "Vozel transcrit et prépare votre texte.",
+    title: "Vozel transcribes and prepares your text.",
     description:
-      "Votre voix est transcrite localement en texte. Un nettoyage IA optionnel peut corriger ponctuation et grammaire, si vous l'activez.",
+      "Your voice is transcribed locally into text. Optional AI cleanup can fix punctuation and grammar, if you enable it.",
   },
   {
-    title: "Le résultat apparaît dans votre zone de saisie.",
+    title: "The result appears in your input field.",
     description:
-      "Le texte final s'insère directement là où se trouve votre curseur. Vous restez dans votre application, dans votre flux.",
+      "The final text is inserted directly where your cursor is. You stay in your app, in your flow.",
   },
 ];

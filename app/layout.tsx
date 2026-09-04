@@ -25,13 +25,13 @@ export const metadata: Metadata = {
   authors: [{ name: "Vozel" }],
   generator: null, // Remove "Next.js" from meta generator tag
   keywords: [
-    "dictée",
-    "transcription vocale",
+    "dictation",
+    "voice transcription",
     "Windows",
     "local",
-    "confidentialité",
-    "français",
+    "privacy",
     "voice typing",
+    "speech to text",
   ],
   robots: {
     index: true,
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: `${siteConfig.name} — ${siteConfig.tagline}`,
     description: siteConfig.description,
     url: siteConfig.url,
-    locale: "fr_FR",
+    locale: "en_US",
     // No `images` entry here on purpose: `/og-image.png` doesn't exist as a
     // static file. `app/opengraph-image.tsx` generates it via `next/og` and
     // Next.js merges it into this metadata automatically.
@@ -104,7 +104,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="fr"
+      lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >

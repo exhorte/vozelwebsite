@@ -16,8 +16,8 @@ export function FeaturesSection() {
       <div className="mx-auto max-w-[var(--content-max)] px-6 py-[var(--section-gap)]">
         <Reveal>
           <SectionHeading
-            label="Fonctionnalités"
-            title="Tout ce dont vous avez besoin pour écrire avec votre voix."
+            label="Features"
+            title="Everything you need to write with your voice."
             scheme="dark"
             className="mb-16"
           />

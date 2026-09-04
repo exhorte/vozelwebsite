@@ -10,12 +10,12 @@ export function canonicalUrl(path: string): string {
 }
 
 /**
- * Format a date string for display (French locale).
+ * Format a date string for display (English locale).
  */
 export function formatDate(dateString: string): string {
   if (!dateString) return "";
   const date = new Date(dateString);
-  return date.toLocaleDateString("fr-FR", {
+  return date.toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
     day: "numeric",

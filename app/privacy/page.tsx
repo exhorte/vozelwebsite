@@ -6,9 +6,8 @@ import { Reveal } from "@/src/components/ui/reveal";
 import { siteConfig } from "@/src/config/site";
 
 export const metadata: Metadata = {
-  title: "Politique de confidentialité",
-  description:
-    "Politique de confidentialité du site Vozel et de l'application de dictée.",
+  title: "Privacy Policy",
+  description: "Privacy policy for the Vozel website and dictation app.",
 };
 
 /**
@@ -29,11 +28,11 @@ export default function PrivacyPage() {
           <div className="mx-auto max-w-[var(--content-narrow)] px-6 pt-20 pb-12 sm:pt-28 sm:pb-16">
             <Reveal>
               <h1 className="font-[family-name:var(--font-the-seasons)] text-4xl sm:text-5xl tracking-tight text-vozel-white text-center leading-[1.08]">
-                Politique de confidentialité
+                Privacy Policy
               </h1>
               <p className="mt-4 text-sm text-vozel-muted-dark text-center">
-                Dernière mise à jour :{" "}
-                <time dateTime="2026-09-04">4 septembre 2026</time>
+                Last updated:{" "}
+                <time dateTime="2026-09-04">September 4, 2026</time>
               </p>
             </Reveal>
           </div>
@@ -45,93 +44,85 @@ export default function PrivacyPage() {
             <div className="prose-custom flex flex-col gap-10">
               <PrivacySection title="Introduction">
                 <p>
-                  Cette politique de confidentialité décrit comment le site web
-                  de {siteConfig.name} et l&apos;application {siteConfig.name}{" "}
-                  traitent vos données. Nous nous engageons à respecter votre
-                  vie privée et à être transparents sur nos pratiques.
+                  This privacy policy describes how the {siteConfig.name}{" "}
+                  website and the {siteConfig.name} application handle your
+                  data. We are committed to respecting your privacy and being
+                  transparent about our practices.
                 </p>
                 <p>
-                  Cette politique concerne deux contextes distincts : le site web
-                  que vous consultez actuellement, et l&apos;application de bureau
-                  Vozel pour Windows.
+                  This policy covers two distinct contexts: the website you
+                  are currently browsing, and the Vozel desktop application
+                  for Windows.
                 </p>
               </PrivacySection>
 
               <Divider scheme="dark" />
 
-              <PrivacySection title="Données traitées par le site web">
+              <PrivacySection title="Data processed by the website">
                 <p>
-                  Le site web de {siteConfig.name} est un site statique. Il ne
-                  collecte aucune donnée personnelle, n&apos;utilise aucun cookie
-                  de tracking, et n&apos;intègre aucun service d&apos;analyse
-                  tiers.
+                  The {siteConfig.name} website is a static site. It does not
+                  collect any personal data, does not use any tracking
+                  cookies, and does not integrate any third-party analytics
+                  service.
                 </p>
                 <ul>
+                  <li>No marketing or tracking cookies are set.</li>
+                  <li>No browsing data is collected.</li>
                   <li>
-                    Aucun cookie marketing ou de tracking n&apos;est déposé.
-                  </li>
-                  <li>
-                    Aucune donnée de navigation n&apos;est collectée.
-                  </li>
-                  <li>
-                    Les téléchargements sont servis via des liens directs sans
-                    collecte d&apos;information.
+                    Downloads are served via direct links with no information
+                    collected.
                   </li>
                 </ul>
               </PrivacySection>
 
               <Divider scheme="dark" />
 
-              <PrivacySection title="Données traitées par l'application Vozel">
+              <PrivacySection title="Data processed by the Vozel application">
                 <p>
-                  L&apos;application Vozel traite votre voix localement sur
-                  votre machine Windows. Par défaut, aucune donnée vocale ou
-                  texte transcrit ne quitte votre appareil.
+                  The Vozel application processes your voice locally on your
+                  Windows machine. By default, no voice data or transcribed
+                  text leaves your device.
                 </p>
                 <ul>
                   <li>
-                    La transcription est effectuée localement via le moteur
-                    Parakeet-TDT.
+                    Transcription is performed locally via the Parakeet-TDT
+                    engine.
+                  </li>
+                  <li>Dictation history is stored locally on your machine.</li>
+                  <li>
+                    Cloud features, if available, are optional and disabled
+                    by default.
                   </li>
                   <li>
-                    L&apos;historique de dictée est stocké localement sur votre
-                    machine.
-                  </li>
-                  <li>
-                    Les fonctions Cloud, si disponibles, sont optionnelles et
-                    désactivées par défaut.
-                  </li>
-                  <li>
-                    Vous pouvez supprimer votre historique local à tout moment
-                    depuis les paramètres de l&apos;application.
+                    You can delete your local history at any time from the
+                    app&apos;s settings.
                   </li>
                 </ul>
               </PrivacySection>
 
               <Divider scheme="dark" />
 
-              <PrivacySection title="Données non collectées">
-                <p>
-                  Ni le site web ni l&apos;application Vozel ne collectent :
-                </p>
+              <PrivacySection title="Data not collected">
+                <p>Neither the website nor the Vozel application collect:</p>
                 <ul>
-                  <li>Vos données vocales ou enregistrements.</li>
-                  <li>Le contenu de vos dictées.</li>
-                  <li>Vos informations personnelles.</li>
+                  <li>Your voice data or recordings.</li>
+                  <li>The content of your dictations.</li>
+                  <li>Your personal information.</li>
                   <li>
-                    Votre adresse IP (le site ne fait aucun logging applicatif).
+                    Your IP address (the site does no application-level
+                    logging).
                   </li>
-                  <li>Votre empreinte numérique de navigateur.</li>
+                  <li>Your browser fingerprint.</li>
                 </ul>
               </PrivacySection>
 
               <Divider scheme="dark" />
 
-              <PrivacySection title="Liens externes">
+              <PrivacySection title="External links">
                 <p>
-                  Le site peut contenir des liens vers des services externes
-                  (GitHub, pages de téléchargement). Nous ne sommes pas
-                  responsables des pratiques de confidentialité de ces services.
+                  The site may contain links to external services (GitHub,
+                  download pages). We are not responsible for the privacy
+                  practices of those services.
                 </p>
               </PrivacySection>
 
@@ -139,20 +130,19 @@ export default function PrivacyPage() {
 
               <PrivacySection title="Contact">
                 <p>
-                  Pour toute question relative à cette politique de
-                  confidentialité, vous pouvez nous contacter via les canaux
-                  indiqués dans les mentions légales du site.
+                  For any question about this privacy policy, you can
+                  contact us via the channels listed in the site&apos;s legal
+                  notice.
                 </p>
               </PrivacySection>
 
               <Divider scheme="dark" />
 
-              <PrivacySection title="Modifications">
+              <PrivacySection title="Changes">
                 <p>
-                  Cette politique est susceptible d&apos;être mise à jour pour
-                  refléter les évolutions du produit ou les exigences légales.
-                  La date de dernière mise à jour est indiquée en haut de cette
-                  page.
+                  This policy may be updated to reflect product changes or
+                  legal requirements. The last-updated date is shown at the
+                  top of this page.
                 </p>
               </PrivacySection>
             </div>

@@ -9,7 +9,7 @@ import { cx } from "@/src/lib/utils";
  * Checksum display with copy-to-clipboard functionality.
  *
  * Only renders when a checksum is available.
- * Shows a brief "Copié !" feedback on click.
+ * Shows a brief "Copied!" feedback on click.
  */
 export function ChecksumCopy() {
   const [copied, setCopied] = useState(false);
@@ -45,14 +45,14 @@ export function ChecksumCopy() {
               ? "text-vozel-success"
               : "text-vozel-muted-dark hover:text-vozel-white"
           )}
-          aria-label={copied ? "Checksum copié" : "Copier le checksum"}
+          aria-label={copied ? "Checksum copied" : "Copy checksum"}
         >
           <Icon
             name={copied ? "check" : "copy"}
             size={14}
             strokeWidth={1.5}
           />
-          {copied ? "Copié !" : "Copier"}
+          {copied ? "Copied!" : "Copy"}
         </button>
       </div>
     </div>

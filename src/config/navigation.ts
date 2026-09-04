@@ -10,20 +10,20 @@ export interface NavItem {
 }
 
 export const mainNavigation: NavItem[] = [
-  { label: "Fonctionnalités", href: "/#features" },
-  { label: "Comment ça marche", href: "/#how-it-works" },
-  { label: "Confidentialité", href: "/#privacy" },
+  { label: "Features", href: "/#features" },
+  { label: "How it works", href: "/#how-it-works" },
+  { label: "Privacy", href: "/#privacy" },
   { label: "FAQ", href: "/faq" },
 ];
 
 export const footerNavigation: NavItem[] = [
-  { label: "Confidentialité", href: "/privacy" },
+  { label: "Privacy", href: "/privacy" },
   { label: "FAQ", href: "/faq" },
-  { label: "Notes de version", href: "/release-notes" },
-  { label: "Mentions légales", href: "/legal" },
+  { label: "Release notes", href: "/release-notes" },
+  { label: "Legal notice", href: "/legal" },
 ];
 
 export const downloadCta = {
-  label: "Télécharger",
+  label: "Download",
   href: "/download",
 } as const;

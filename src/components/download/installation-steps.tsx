@@ -32,13 +32,13 @@ export function InstallationSteps() {
       {/* SmartScreen */}
       <section>
         <h3 className="font-[family-name:var(--font-the-seasons)] text-lg text-vozel-white mb-3">
-          Avertissement SmartScreen
+          SmartScreen warning
         </h3>
         <p className="text-sm text-vozel-muted-dark leading-relaxed">
-          Windows SmartScreen peut afficher un avertissement lors de la première
-          installation de Vozel, car l&apos;application est distribuée en dehors du
-          Microsoft Store. Cliquez sur &laquo;&nbsp;Exécuter quand même&nbsp;&raquo;
-          pour poursuivre l&apos;installation.
+          Windows SmartScreen may show a warning the first time you install
+          Vozel, since the app is distributed outside the Microsoft Store.
+          Click &laquo;&nbsp;Run anyway&nbsp;&raquo; to continue the
+          installation.
         </p>
       </section>
 
@@ -47,11 +47,11 @@ export function InstallationSteps() {
       {/* Update */}
       <section>
         <h3 className="font-[family-name:var(--font-the-seasons)] text-lg text-vozel-white mb-3">
-          Mise à jour
+          Updating
         </h3>
         <p className="text-sm text-vozel-muted-dark leading-relaxed">
-          Pour mettre à jour Vozel, téléchargez la nouvelle version et exécutez
-          l&apos;installateur. Vos paramètres et votre historique sont conservés.
+          To update Vozel, download the new version and run the installer.
+          Your settings and history are preserved.
         </p>
       </section>
 
@@ -60,13 +60,12 @@ export function InstallationSteps() {
       {/* Uninstall */}
       <section>
         <h3 className="font-[family-name:var(--font-the-seasons)] text-lg text-vozel-white mb-3">
-          Désinstallation
+          Uninstalling
         </h3>
         <p className="text-sm text-vozel-muted-dark leading-relaxed">
-          Désinstallez Vozel depuis Paramètres &gt; Applications &gt; Vozel &gt;
-          Désinstaller, ou depuis le Panneau de configuration. La désinstallation
-          supprime l&apos;application mais conserve vos données locales&nbsp;; vous
-          pouvez les supprimer manuellement si vous le souhaitez.
+          Uninstall Vozel from Settings &gt; Apps &gt; Vozel &gt; Uninstall,
+          or from the Control Panel. Uninstalling removes the app but keeps
+          your local data&nbsp;; you can delete it manually if you&apos;d like.
         </p>
       </section>
     </div>
@@ -74,9 +73,9 @@ export function InstallationSteps() {
 }
 
 const installSteps = [
-  "Téléchargez le fichier d'installation Vozel.",
-  "Double-cliquez sur le fichier téléchargé.",
-  "Suivez les instructions à l'écran.",
-  "Lancez Vozel depuis le menu Démarrer.",
-  "Configurez votre langue de dictée dans les réglages. Le déclencheur (Ctrl+Win) est fixe, aucune configuration requise.",
+  "Download the Vozel installer file.",
+  "Double-click the downloaded file.",
+  "Follow the on-screen instructions.",
+  "Launch Vozel from the Start menu.",
+  "Set your dictation language in the settings. The trigger (Ctrl+Win) is fixed, no configuration needed.",
 ];

@@ -64,13 +64,13 @@ export function SiteHeader() {
       >
         <nav
           className="mx-auto flex h-full max-w-[var(--content-max)] items-center justify-between px-6"
-          aria-label="Navigation principale"
+          aria-label="Main navigation"
         >
           {/* Logo + brand */}
           <Link
             href="/"
             className="focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-vozel-focus rounded-sm"
-            aria-label="Vozel — Accueil"
+            aria-label="Vozel — Home"
           >
             <Logo scheme="dark" size="medium" />
           </Link>
@@ -102,7 +102,7 @@ export function SiteHeader() {
             onClick={() => setMobileOpen((prev) => !prev)}
             aria-expanded={mobileOpen}
             aria-controls="mobile-menu"
-            aria-label={mobileOpen ? "Fermer le menu" : "Ouvrir le menu"}
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
           >
             <svg
               width="20"

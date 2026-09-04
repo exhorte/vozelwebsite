@@ -20,7 +20,7 @@ export function FaqPreview() {
         <Reveal>
           <SectionHeading
             label="FAQ"
-            title="Questions fréquentes."
+            title="Frequently asked questions."
             scheme="light"
             className="mb-12"
           />
@@ -56,7 +56,7 @@ export function FaqPreview() {
               href="/faq"
               className="inline-flex items-center gap-2 text-sm text-vozel-muted-light hover:text-vozel-ink transition-colors underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-vozel-focus rounded-sm"
             >
-              Voir toutes les questions
+              See all questions
               <Icon name="arrow-right" size={14} strokeWidth={1.5} />
             </Link>
           </p>

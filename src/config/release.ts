@@ -30,7 +30,7 @@ export const currentRelease: ReleaseInfo = {
   fileName: "",
   fileSize: "",
   architecture: "x64",
-  minimumWindowsVersion: "Windows 10 (version 21H2 ou ultérieure)",
+  minimumWindowsVersion: "Windows 10 (version 21H2 or later)",
   sha256: "",
   releaseNotesUrl: "/release-notes",
   isAvailable: false,
@@ -40,9 +40,9 @@ export const currentRelease: ReleaseInfo = {
  * Human-readable labels for release channels.
  */
 export const channelLabels: Record<ReleaseInfo["channel"], string> = {
-  stable: "Version stable",
-  beta: "Version bêta",
-  preview: "Aperçu",
+  stable: "Stable release",
+  beta: "Beta release",
+  preview: "Preview",
 };
 
 /**
@@ -52,5 +52,5 @@ export const architectureLabels: Record<ReleaseInfo["architecture"], string> =
   {
     x64: "64-bit (x64)",
     arm64: "ARM64",
-    "x64-arm64": "x64 et ARM64",
+    "x64-arm64": "x64 and ARM64",
   };

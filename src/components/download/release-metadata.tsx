@@ -30,7 +30,7 @@ export function ReleaseMetadata() {
   if (!currentRelease.isAvailable) {
     return (
       <div className="text-center text-sm text-vozel-muted-dark py-4">
-        Les métadonnées de la version seront disponibles lors de la publication.
+        Release metadata will be available once it&apos;s published.
       </div>
     );
   }
@@ -38,28 +38,28 @@ export function ReleaseMetadata() {
   return (
     <div className="w-full max-w-sm mx-auto mt-8">
       <h3 className="text-xs tracking-[0.15em] uppercase text-vozel-muted-dark font-medium mb-4 text-center">
-        Informations sur la version
+        Release information
       </h3>
       <dl className="flex flex-col">
         <MetaRow label="Version" value={currentRelease.version} />
         <MetaRow
-          label="Canal"
+          label="Channel"
           value={channelLabels[currentRelease.channel]}
         />
         {currentRelease.publishedAt && (
           <MetaRow
-            label="Date de publication"
+            label="Published on"
             value={formatDate(currentRelease.publishedAt)}
           />
         )}
-        <MetaRow label="Nom du fichier" value={currentRelease.fileName} />
-        <MetaRow label="Taille" value={currentRelease.fileSize} />
+        <MetaRow label="File name" value={currentRelease.fileName} />
+        <MetaRow label="Size" value={currentRelease.fileSize} />
         <MetaRow
           label="Architecture"
           value={architectureLabels[currentRelease.architecture]}
         />
         <MetaRow
-          label="Windows minimum"
+          label="Minimum Windows"
           value={currentRelease.minimumWindowsVersion}
         />
       </dl>

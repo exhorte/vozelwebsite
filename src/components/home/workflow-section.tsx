@@ -14,8 +14,8 @@ export function WorkflowSection() {
       <div className="mx-auto max-w-[var(--content-narrow)] px-6 py-[var(--section-gap)]">
         <Reveal>
           <SectionHeading
-            label="Comment ça marche"
-            title="De la voix au texte, en quatre étapes."
+            label="How it works"
+            title="From voice to text, in four steps."
             scheme="dark"
             className="mb-16"
           />
@@ -52,23 +52,23 @@ export function WorkflowSection() {
 
 const steps = [
   {
-    title: "Placez le curseur.",
+    title: "Place your cursor.",
     description:
-      "Positionnez votre curseur dans la zone de texte où vous souhaitez que le résultat apparaisse — champ de formulaire, document, email, ou tout autre champ de saisie Windows.",
+      "Position your cursor in the text field where you want the result to appear — a form field, document, email, or any other Windows input field.",
   },
   {
-    title: "Maintenez Ctrl+Win.",
+    title: "Hold Ctrl+Win.",
     description:
-      "Gardez les deux touches enfoncées (ou cliquez sur le widget flottant) pour démarrer l'écoute. Un signal visuel discret confirme que Vozel vous écoute.",
+      "Keep both keys held down (or click the floating widget) to start listening. A subtle visual cue confirms Vozel is listening.",
   },
   {
-    title: "Parlez naturellement.",
+    title: "Speak naturally.",
     description:
-      "Exprimez votre pensée à voix haute pendant que vous maintenez la combinaison. La transcription s'effectue localement sur votre machine, sans connexion Internet requise.",
+      "Say your thoughts out loud while holding the combination. Transcription happens locally on your machine, no Internet connection required.",
   },
   {
-    title: "Relâchez pour insérer.",
+    title: "Release to insert.",
     description:
-      "Relâchez Ctrl+Win : Vozel transcrit ce que vous avez dit et l'insère directement dans votre zone de saisie active. Vous restez dans votre flux de travail, sans interruption.",
+      "Release Ctrl+Win: Vozel transcribes what you said and inserts it directly into your active input field. You stay in your flow, without interruption.",
   },
 ];

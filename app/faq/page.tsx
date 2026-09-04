@@ -8,7 +8,7 @@ import { faqItems } from "@/src/content/faq";
 
 export const metadata: Metadata = {
   title: "FAQ",
-  description: "Questions fréquentes sur Vozel — fonctionnement, confidentialité, installation et compatibilité.",
+  description: "Frequently asked questions about Vozel — how it works, privacy, installation, and compatibility.",
 };
 
 export default function FaqPage() {
@@ -21,10 +21,10 @@ export default function FaqPage() {
           <div className="mx-auto max-w-[var(--content-narrow)] px-6 pt-20 pb-12 sm:pt-28 sm:pb-16">
             <Reveal>
               <h1 className="font-[family-name:var(--font-the-seasons)] text-4xl sm:text-5xl tracking-tight text-vozel-white text-center leading-[1.08]">
-                Questions fréquentes
+                Frequently asked questions
               </h1>
               <p className="mt-4 text-base sm:text-lg text-vozel-muted-dark text-center max-w-md mx-auto">
-                Tout ce que vous devez savoir sur Vozel.
+                Everything you need to know about Vozel.
               </p>
             </Reveal>
           </div>

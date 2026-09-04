@@ -30,4 +30,4 @@ export const releaseNotes: ReleaseNote[] = [];
  * releases have been published yet.
  */
 export const noReleasesMessage =
-  "Aucune version publiée pour le moment. Les notes de version apparaîtront ici dès la première publication.";
+  "No version published yet. Release notes will appear here as soon as the first release is out.";

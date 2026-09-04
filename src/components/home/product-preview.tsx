@@ -19,9 +19,9 @@ export function ProductPreview() {
       <div className="mx-auto max-w-[var(--content-max)] px-6 py-[var(--section-gap)]">
         <Reveal>
           <SectionHeading
-            label="Identité"
-            title="Conçu pour disparaître."
-            subtitle="Une véritable capture d'écran de l'application arrivera avec la première version publique — en attendant, voici l'identité visuelle de Vozel."
+            label="Identity"
+            title="Designed to disappear."
+            subtitle="A real screenshot of the app will arrive with the first public release — in the meantime, here's Vozel's visual identity."
             scheme="dark"
             className="mb-12 sm:mb-16"
           />
@@ -33,7 +33,7 @@ export function ProductPreview() {
             <div className="rounded-lg border border-vozel-border-dark overflow-hidden shadow-2xl shadow-black/40">
               <Image
                 src={brandVisuals.lockupOnDark}
-                alt="Symbole et mot-symbole Vozel"
+                alt="Vozel icon and wordmark"
                 width={2000}
                 height={2000}
                 className="w-full h-auto"

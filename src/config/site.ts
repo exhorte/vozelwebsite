@@ -9,9 +9,9 @@ export const siteConfig = {
   name: "Vozel",
   tagline: "Thought, in Motion.",
   description:
-    "Vozel transforme votre voix en texte directement dans vos applications Windows, avec une transcription locale et une expérience conçue pour rester dans votre flux de travail.",
+    "Vozel turns your voice into text directly inside your Windows apps, with local transcription and an experience designed to keep you in your flow.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://vozelapp.cc",
-  locale: "fr",
+  locale: "en",
   titleTemplate: "%s — Vozel",
 } as const;
 

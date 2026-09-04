@@ -1,7 +1,7 @@
 {
   "name": "Vozel",
   "short_name": "Vozel",
-  "description": "Vozel transforme votre voix en texte directement dans vos applications Windows, avec une transcription locale.",
+  "description": "Vozel turns your voice into text directly inside your Windows apps, with local transcription.",
   "start_url": "/",
   "display": "browser",
   "background_color": "#101010",
